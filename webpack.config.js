@@ -8,7 +8,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 const CompressionPlugin = require('compression-webpack-plugin');
-const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 
 module.exports = (env) => {
   const PRODUCTION = env.production;
@@ -106,7 +106,7 @@ module.exports = (env) => {
 };
 
 function getChromeBrowser() {
-  const platform = process.platform;
+  const { platform } = process;
   let app = '';
 
   if (platform === 'linux') {
