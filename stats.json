@@ -1,32 +1,32 @@
 {
-  "hash": "64d26df16d83bc456ecc",
+  "hash": "508ebf7b05aed06b587d",
   "version": "5.18.0",
-  "time": 1533,
-  "builtAt": 1611803090895,
+  "time": 3206,
+  "builtAt": 1611818048072,
   "publicPath": "",
-  "outputPath": "/home/runner/work/Weather-App/Weather-App/dist",
+  "outputPath": "/home/kyle/web-projects/Weather-App/dist",
   "assetsByChunkName": {
     "main": [
-      "main.88ab6a325e9982548b03.css",
-      "main.280b02841f22e20e9ccf.js"
+      "main.5377cec7c4a24c46fdc7.css",
+      "main.ac9fe01bcfbb0a320d55.js"
     ]
   },
   "assets": [
     {
       "type": "asset",
-      "name": "main.88ab6a325e9982548b03.css",
-      "size": 1539,
+      "name": "main.5377cec7c4a24c46fdc7.css",
+      "size": 1511,
       "emitted": true,
       "comparedForEmit": false,
       "cached": false,
       "info": {
         "immutable": true,
-        "contenthash": "88ab6a325e9982548b03",
+        "contenthash": "5377cec7c4a24c46fdc7",
         "minimized": true,
         "related": {
-          "gzipped": "main.88ab6a325e9982548b03.css.gz"
+          "gzipped": "main.5377cec7c4a24c46fdc7.css.gz"
         },
-        "size": 1539
+        "size": 1511
       },
       "chunkNames": [
         "main"
@@ -38,15 +38,15 @@
       "related": [
         {
           "type": "gzipped",
-          "name": "main.88ab6a325e9982548b03.css.gz",
-          "size": 773,
+          "name": "main.5377cec7c4a24c46fdc7.css.gz",
+          "size": 764,
           "emitted": true,
           "comparedForEmit": false,
           "cached": false,
           "info": {
             "compressed": true,
             "immutable": true,
-            "size": 773
+            "size": 764
           },
           "chunkNames": [],
           "chunkIdHints": [],
@@ -67,7 +67,7 @@
     {
       "type": "asset",
       "name": "index.html",
-      "size": 675,
+      "size": 838,
       "emitted": true,
       "comparedForEmit": false,
       "cached": false,
@@ -75,7 +75,7 @@
         "related": {
           "gzipped": "index.html.gz"
         },
-        "size": 675
+        "size": 838
       },
       "chunkNames": [],
       "chunkIdHints": [],
@@ -86,13 +86,13 @@
         {
           "type": "gzipped",
           "name": "index.html.gz",
-          "size": 362,
+          "size": 452,
           "emitted": true,
           "comparedForEmit": false,
           "cached": false,
           "info": {
             "compressed": true,
-            "size": 362
+            "size": 452
           },
           "chunkNames": [],
           "chunkIdHints": [],
@@ -110,17 +110,20 @@
     },
     {
       "type": "asset",
-      "name": "main.280b02841f22e20e9ccf.js",
-      "size": 49,
+      "name": "main.ac9fe01bcfbb0a320d55.js",
+      "size": 819,
       "emitted": true,
       "comparedForEmit": false,
       "cached": false,
       "info": {
         "immutable": true,
-        "contenthash": "280b02841f22e20e9ccf",
+        "contenthash": "ac9fe01bcfbb0a320d55",
         "javascriptModule": false,
         "minimized": true,
-        "size": 49
+        "related": {
+          "gzipped": "main.ac9fe01bcfbb0a320d55.js.gz"
+        },
+        "size": 819
       },
       "chunkNames": [
         "main"
@@ -128,7 +131,30 @@
       "chunkIdHints": [],
       "auxiliaryChunkNames": [],
       "auxiliaryChunkIdHints": [],
-      "related": {},
+      "filteredRelated": 0,
+      "related": [
+        {
+          "type": "gzipped",
+          "name": "main.ac9fe01bcfbb0a320d55.js.gz",
+          "size": 444,
+          "emitted": true,
+          "comparedForEmit": false,
+          "cached": false,
+          "info": {
+            "compressed": true,
+            "immutable": true,
+            "size": 444
+          },
+          "chunkNames": [],
+          "chunkIdHints": [],
+          "auxiliaryChunkNames": [],
+          "auxiliaryChunkIdHints": [],
+          "related": {},
+          "chunks": [],
+          "auxiliaryChunks": [],
+          "isOverSizeLimit": false
+        }
+      ],
       "chunks": [
         179
       ],
@@ -142,10 +168,10 @@
       "initial": true,
       "entry": true,
       "recorded": false,
-      "size": 2220,
+      "size": 4006,
       "sizes": {
-        "javascript": 96,
-        "css/mini-extract": 2124
+        "javascript": 1748,
+        "css/mini-extract": 2258
       },
       "names": [
         "main"
@@ -155,11 +181,11 @@
         "main"
       ],
       "files": [
-        "main.88ab6a325e9982548b03.css",
-        "main.280b02841f22e20e9ccf.js"
+        "main.5377cec7c4a24c46fdc7.css",
+        "main.ac9fe01bcfbb0a320d55.js"
       ],
       "auxiliaryFiles": [],
-      "hash": "3697c38cfe5edd8c8c90",
+      "hash": "eb0e088042cd1df3c22b",
       "childrenByOrder": {},
       "id": 179,
       "siblings": [],
@@ -170,16 +196,16 @@
           "type": "module",
           "moduleType": "javascript/esm",
           "layer": null,
-          "size": 96,
+          "size": 1748,
           "sizes": {
-            "javascript": 96
+            "javascript": 1748
           },
           "built": true,
           "codeGenerated": true,
           "cached": false,
-          "identifier": "/home/runner/work/Weather-App/Weather-App/src/index.js|2ea193999e57a6161bec030a1c1bc28a",
+          "identifier": "/home/kyle/web-projects/Weather-App/src/index.js|2ea193999e57a6161bec030a1c1bc28a",
           "name": "./src/index.js + 1 modules",
-          "nameForCondition": "/home/runner/work/Weather-App/Weather-App/src/index.js",
+          "nameForCondition": "/home/kyle/web-projects/Weather-App/src/index.js",
           "index": 0,
           "preOrderIndex": 0,
           "index2": 2,
@@ -221,16 +247,16 @@
               "type": "module",
               "moduleType": "javascript/auto",
               "layer": null,
-              "size": 46,
+              "size": 1698,
               "sizes": {
-                "javascript": 46
+                "javascript": 1698
               },
               "built": true,
               "codeGenerated": false,
               "cached": false,
-              "identifier": "/home/runner/work/Weather-App/Weather-App/src/index.js",
+              "identifier": "/home/kyle/web-projects/Weather-App/src/index.js",
               "name": "./src/index.js",
-              "nameForCondition": "/home/runner/work/Weather-App/Weather-App/src/index.js",
+              "nameForCondition": "/home/kyle/web-projects/Weather-App/src/index.js",
               "index": 0,
               "preOrderIndex": 0,
               "index2": 2,
@@ -253,7 +279,7 @@
               "usedExports": [],
               "providedExports": [],
               "optimizationBailout": [
-                "Statement (ExpressionStatement) with side effects in source code at 3:0-21"
+                "Statement (ExpressionStatement) with side effects in source code at 55:0-29"
               ],
               "depth": 0
             },
@@ -268,9 +294,9 @@
               "built": true,
               "codeGenerated": false,
               "cached": false,
-              "identifier": "/home/runner/work/Weather-App/Weather-App/node_modules/mini-css-extract-plugin/dist/loader.js!/home/runner/work/Weather-App/Weather-App/node_modules/css-loader/dist/cjs.js!/home/runner/work/Weather-App/Weather-App/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!/home/runner/work/Weather-App/Weather-App/src/styles.css",
+              "identifier": "/home/kyle/web-projects/Weather-App/node_modules/mini-css-extract-plugin/dist/loader.js!/home/kyle/web-projects/Weather-App/node_modules/css-loader/dist/cjs.js!/home/kyle/web-projects/Weather-App/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!/home/kyle/web-projects/Weather-App/src/styles.css",
               "name": "./src/styles.css",
-              "nameForCondition": "/home/runner/work/Weather-App/Weather-App/src/styles.css",
+              "nameForCondition": "/home/kyle/web-projects/Weather-App/src/styles.css",
               "index": 1,
               "preOrderIndex": 1,
               "index2": 1,
@@ -279,11 +305,11 @@
               "optional": false,
               "orphan": false,
               "dependent": true,
-              "issuer": "/home/runner/work/Weather-App/Weather-App/src/index.js",
+              "issuer": "/home/kyle/web-projects/Weather-App/src/index.js",
               "issuerName": "./src/index.js",
               "issuerPath": [
                 {
-                  "identifier": "/home/runner/work/Weather-App/Weather-App/src/index.js",
+                  "identifier": "/home/kyle/web-projects/Weather-App/src/index.js",
                   "name": "./src/index.js",
                   "id": null
                 }
@@ -297,10 +323,10 @@
               "assets": [],
               "reasons": [
                 {
-                  "moduleIdentifier": "/home/runner/work/Weather-App/Weather-App/src/index.js",
+                  "moduleIdentifier": "/home/kyle/web-projects/Weather-App/src/index.js",
                   "module": "./src/index.js",
                   "moduleName": "./src/index.js",
-                  "resolvedModuleIdentifier": "/home/runner/work/Weather-App/Weather-App/src/index.js",
+                  "resolvedModuleIdentifier": "/home/kyle/web-projects/Weather-App/src/index.js",
                   "resolvedModule": "./src/index.js",
                   "type": "harmony side effect evaluation",
                   "active": true,
@@ -322,16 +348,16 @@
           "type": "module",
           "moduleType": "css/mini-extract",
           "layer": null,
-          "size": 2124,
+          "size": 2258,
           "sizes": {
-            "css/mini-extract": 2124
+            "css/mini-extract": 2258
           },
           "built": false,
           "codeGenerated": true,
           "cached": false,
-          "identifier": "css|/home/runner/work/Weather-App/Weather-App/node_modules/css-loader/dist/cjs.js!/home/runner/work/Weather-App/Weather-App/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!/home/runner/work/Weather-App/Weather-App/src/styles.css|0",
+          "identifier": "css|/home/kyle/web-projects/Weather-App/node_modules/css-loader/dist/cjs.js!/home/kyle/web-projects/Weather-App/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!/home/kyle/web-projects/Weather-App/src/styles.css|0",
           "name": "css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./src/styles.css",
-          "nameForCondition": "/home/runner/work/Weather-App/Weather-App/src/styles.css",
+          "nameForCondition": "/home/kyle/web-projects/Weather-App/src/styles.css",
           "index": 2,
           "preOrderIndex": 2,
           "index2": 0,
@@ -339,16 +365,16 @@
           "optional": false,
           "orphan": false,
           "dependent": true,
-          "issuer": "/home/runner/work/Weather-App/Weather-App/node_modules/mini-css-extract-plugin/dist/loader.js!/home/runner/work/Weather-App/Weather-App/node_modules/css-loader/dist/cjs.js!/home/runner/work/Weather-App/Weather-App/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!/home/runner/work/Weather-App/Weather-App/src/styles.css",
+          "issuer": "/home/kyle/web-projects/Weather-App/node_modules/mini-css-extract-plugin/dist/loader.js!/home/kyle/web-projects/Weather-App/node_modules/css-loader/dist/cjs.js!/home/kyle/web-projects/Weather-App/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!/home/kyle/web-projects/Weather-App/src/styles.css",
           "issuerName": "./src/styles.css",
           "issuerPath": [
             {
-              "identifier": "/home/runner/work/Weather-App/Weather-App/src/index.js",
+              "identifier": "/home/kyle/web-projects/Weather-App/src/index.js",
               "name": "./src/index.js",
               "id": null
             },
             {
-              "identifier": "/home/runner/work/Weather-App/Weather-App/node_modules/mini-css-extract-plugin/dist/loader.js!/home/runner/work/Weather-App/Weather-App/node_modules/css-loader/dist/cjs.js!/home/runner/work/Weather-App/Weather-App/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!/home/runner/work/Weather-App/Weather-App/src/styles.css",
+              "identifier": "/home/kyle/web-projects/Weather-App/node_modules/mini-css-extract-plugin/dist/loader.js!/home/kyle/web-projects/Weather-App/node_modules/css-loader/dist/cjs.js!/home/kyle/web-projects/Weather-App/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!/home/kyle/web-projects/Weather-App/src/styles.css",
               "name": "./src/styles.css",
               "id": null
             }
@@ -364,10 +390,10 @@
           "assets": [],
           "reasons": [
             {
-              "moduleIdentifier": "/home/runner/work/Weather-App/Weather-App/node_modules/mini-css-extract-plugin/dist/loader.js!/home/runner/work/Weather-App/Weather-App/node_modules/css-loader/dist/cjs.js!/home/runner/work/Weather-App/Weather-App/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!/home/runner/work/Weather-App/Weather-App/src/styles.css",
+              "moduleIdentifier": "/home/kyle/web-projects/Weather-App/node_modules/mini-css-extract-plugin/dist/loader.js!/home/kyle/web-projects/Weather-App/node_modules/css-loader/dist/cjs.js!/home/kyle/web-projects/Weather-App/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!/home/kyle/web-projects/Weather-App/src/styles.css",
               "module": "./src/styles.css",
               "moduleName": "./src/styles.css",
-              "resolvedModuleIdentifier": "/home/runner/work/Weather-App/Weather-App/node_modules/mini-css-extract-plugin/dist/loader.js!/home/runner/work/Weather-App/Weather-App/node_modules/css-loader/dist/cjs.js!/home/runner/work/Weather-App/Weather-App/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!/home/runner/work/Weather-App/Weather-App/src/styles.css",
+              "resolvedModuleIdentifier": "/home/kyle/web-projects/Weather-App/node_modules/mini-css-extract-plugin/dist/loader.js!/home/kyle/web-projects/Weather-App/node_modules/css-loader/dist/cjs.js!/home/kyle/web-projects/Weather-App/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!/home/kyle/web-projects/Weather-App/src/styles.css",
               "resolvedModule": "./src/styles.css",
               "type": "unknown",
               "active": true,
@@ -377,10 +403,10 @@
               "resolvedModuleId": null
             },
             {
-              "moduleIdentifier": "/home/runner/work/Weather-App/Weather-App/src/index.js|2ea193999e57a6161bec030a1c1bc28a",
+              "moduleIdentifier": "/home/kyle/web-projects/Weather-App/src/index.js|2ea193999e57a6161bec030a1c1bc28a",
               "module": "./src/index.js + 1 modules",
               "moduleName": "./src/index.js + 1 modules",
-              "resolvedModuleIdentifier": "/home/runner/work/Weather-App/Weather-App/node_modules/mini-css-extract-plugin/dist/loader.js!/home/runner/work/Weather-App/Weather-App/node_modules/css-loader/dist/cjs.js!/home/runner/work/Weather-App/Weather-App/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!/home/runner/work/Weather-App/Weather-App/src/styles.css",
+              "resolvedModuleIdentifier": "/home/kyle/web-projects/Weather-App/node_modules/mini-css-extract-plugin/dist/loader.js!/home/kyle/web-projects/Weather-App/node_modules/css-loader/dist/cjs.js!/home/kyle/web-projects/Weather-App/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!/home/kyle/web-projects/Weather-App/src/styles.css",
               "resolvedModule": "./src/styles.css",
               "type": "unknown",
               "active": true,
@@ -414,16 +440,16 @@
       "type": "module",
       "moduleType": "javascript/esm",
       "layer": null,
-      "size": 96,
+      "size": 1748,
       "sizes": {
-        "javascript": 96
+        "javascript": 1748
       },
       "built": true,
       "codeGenerated": true,
       "cached": false,
-      "identifier": "/home/runner/work/Weather-App/Weather-App/src/index.js|2ea193999e57a6161bec030a1c1bc28a",
+      "identifier": "/home/kyle/web-projects/Weather-App/src/index.js|2ea193999e57a6161bec030a1c1bc28a",
       "name": "./src/index.js + 1 modules",
-      "nameForCondition": "/home/runner/work/Weather-App/Weather-App/src/index.js",
+      "nameForCondition": "/home/kyle/web-projects/Weather-App/src/index.js",
       "index": 0,
       "preOrderIndex": 0,
       "index2": 2,
@@ -464,16 +490,16 @@
           "type": "module",
           "moduleType": "javascript/auto",
           "layer": null,
-          "size": 46,
+          "size": 1698,
           "sizes": {
-            "javascript": 46
+            "javascript": 1698
           },
           "built": true,
           "codeGenerated": false,
           "cached": false,
-          "identifier": "/home/runner/work/Weather-App/Weather-App/src/index.js",
+          "identifier": "/home/kyle/web-projects/Weather-App/src/index.js",
           "name": "./src/index.js",
-          "nameForCondition": "/home/runner/work/Weather-App/Weather-App/src/index.js",
+          "nameForCondition": "/home/kyle/web-projects/Weather-App/src/index.js",
           "index": 0,
           "preOrderIndex": 0,
           "index2": 2,
@@ -495,7 +521,7 @@
           "usedExports": [],
           "providedExports": [],
           "optimizationBailout": [
-            "Statement (ExpressionStatement) with side effects in source code at 3:0-21"
+            "Statement (ExpressionStatement) with side effects in source code at 55:0-29"
           ],
           "depth": 0
         },
@@ -510,9 +536,9 @@
           "built": true,
           "codeGenerated": false,
           "cached": false,
-          "identifier": "/home/runner/work/Weather-App/Weather-App/node_modules/mini-css-extract-plugin/dist/loader.js!/home/runner/work/Weather-App/Weather-App/node_modules/css-loader/dist/cjs.js!/home/runner/work/Weather-App/Weather-App/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!/home/runner/work/Weather-App/Weather-App/src/styles.css",
+          "identifier": "/home/kyle/web-projects/Weather-App/node_modules/mini-css-extract-plugin/dist/loader.js!/home/kyle/web-projects/Weather-App/node_modules/css-loader/dist/cjs.js!/home/kyle/web-projects/Weather-App/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!/home/kyle/web-projects/Weather-App/src/styles.css",
           "name": "./src/styles.css",
-          "nameForCondition": "/home/runner/work/Weather-App/Weather-App/src/styles.css",
+          "nameForCondition": "/home/kyle/web-projects/Weather-App/src/styles.css",
           "index": 1,
           "preOrderIndex": 1,
           "index2": 1,
@@ -520,11 +546,11 @@
           "cacheable": true,
           "optional": false,
           "orphan": false,
-          "issuer": "/home/runner/work/Weather-App/Weather-App/src/index.js",
+          "issuer": "/home/kyle/web-projects/Weather-App/src/index.js",
           "issuerName": "./src/index.js",
           "issuerPath": [
             {
-              "identifier": "/home/runner/work/Weather-App/Weather-App/src/index.js",
+              "identifier": "/home/kyle/web-projects/Weather-App/src/index.js",
               "name": "./src/index.js",
               "id": null
             }
@@ -538,10 +564,10 @@
           "assets": [],
           "reasons": [
             {
-              "moduleIdentifier": "/home/runner/work/Weather-App/Weather-App/src/index.js",
+              "moduleIdentifier": "/home/kyle/web-projects/Weather-App/src/index.js",
               "module": "./src/index.js",
               "moduleName": "./src/index.js",
-              "resolvedModuleIdentifier": "/home/runner/work/Weather-App/Weather-App/src/index.js",
+              "resolvedModuleIdentifier": "/home/kyle/web-projects/Weather-App/src/index.js",
               "resolvedModule": "./src/index.js",
               "type": "harmony side effect evaluation",
               "active": true,
@@ -570,9 +596,9 @@
       "built": true,
       "codeGenerated": false,
       "cached": false,
-      "identifier": "/home/runner/work/Weather-App/Weather-App/node_modules/mini-css-extract-plugin/dist/loader.js!/home/runner/work/Weather-App/Weather-App/node_modules/css-loader/dist/cjs.js!/home/runner/work/Weather-App/Weather-App/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!/home/runner/work/Weather-App/Weather-App/src/styles.css",
+      "identifier": "/home/kyle/web-projects/Weather-App/node_modules/mini-css-extract-plugin/dist/loader.js!/home/kyle/web-projects/Weather-App/node_modules/css-loader/dist/cjs.js!/home/kyle/web-projects/Weather-App/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!/home/kyle/web-projects/Weather-App/src/styles.css",
       "name": "./src/styles.css",
-      "nameForCondition": "/home/runner/work/Weather-App/Weather-App/src/styles.css",
+      "nameForCondition": "/home/kyle/web-projects/Weather-App/src/styles.css",
       "index": 1,
       "preOrderIndex": 1,
       "index2": 1,
@@ -580,11 +606,11 @@
       "cacheable": true,
       "optional": false,
       "orphan": true,
-      "issuer": "/home/runner/work/Weather-App/Weather-App/src/index.js",
+      "issuer": "/home/kyle/web-projects/Weather-App/src/index.js",
       "issuerName": "./src/index.js",
       "issuerPath": [
         {
-          "identifier": "/home/runner/work/Weather-App/Weather-App/src/index.js",
+          "identifier": "/home/kyle/web-projects/Weather-App/src/index.js",
           "name": "./src/index.js",
           "id": null
         }
@@ -598,10 +624,10 @@
       "assets": [],
       "reasons": [
         {
-          "moduleIdentifier": "/home/runner/work/Weather-App/Weather-App/src/index.js",
+          "moduleIdentifier": "/home/kyle/web-projects/Weather-App/src/index.js",
           "module": "./src/index.js",
           "moduleName": "./src/index.js",
-          "resolvedModuleIdentifier": "/home/runner/work/Weather-App/Weather-App/src/index.js",
+          "resolvedModuleIdentifier": "/home/kyle/web-projects/Weather-App/src/index.js",
           "resolvedModule": "./src/index.js",
           "type": "harmony side effect evaluation",
           "active": true,
@@ -621,32 +647,32 @@
       "type": "module",
       "moduleType": "css/mini-extract",
       "layer": null,
-      "size": 2124,
+      "size": 2258,
       "sizes": {
-        "css/mini-extract": 2124
+        "css/mini-extract": 2258
       },
       "built": false,
       "codeGenerated": true,
       "cached": false,
-      "identifier": "css|/home/runner/work/Weather-App/Weather-App/node_modules/css-loader/dist/cjs.js!/home/runner/work/Weather-App/Weather-App/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!/home/runner/work/Weather-App/Weather-App/src/styles.css|0",
+      "identifier": "css|/home/kyle/web-projects/Weather-App/node_modules/css-loader/dist/cjs.js!/home/kyle/web-projects/Weather-App/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!/home/kyle/web-projects/Weather-App/src/styles.css|0",
       "name": "css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./src/styles.css",
-      "nameForCondition": "/home/runner/work/Weather-App/Weather-App/src/styles.css",
+      "nameForCondition": "/home/kyle/web-projects/Weather-App/src/styles.css",
       "index": 2,
       "preOrderIndex": 2,
       "index2": 0,
       "postOrderIndex": 0,
       "optional": false,
       "orphan": false,
-      "issuer": "/home/runner/work/Weather-App/Weather-App/node_modules/mini-css-extract-plugin/dist/loader.js!/home/runner/work/Weather-App/Weather-App/node_modules/css-loader/dist/cjs.js!/home/runner/work/Weather-App/Weather-App/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!/home/runner/work/Weather-App/Weather-App/src/styles.css",
+      "issuer": "/home/kyle/web-projects/Weather-App/node_modules/mini-css-extract-plugin/dist/loader.js!/home/kyle/web-projects/Weather-App/node_modules/css-loader/dist/cjs.js!/home/kyle/web-projects/Weather-App/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!/home/kyle/web-projects/Weather-App/src/styles.css",
       "issuerName": "./src/styles.css",
       "issuerPath": [
         {
-          "identifier": "/home/runner/work/Weather-App/Weather-App/src/index.js",
+          "identifier": "/home/kyle/web-projects/Weather-App/src/index.js",
           "name": "./src/index.js",
           "id": null
         },
         {
-          "identifier": "/home/runner/work/Weather-App/Weather-App/node_modules/mini-css-extract-plugin/dist/loader.js!/home/runner/work/Weather-App/Weather-App/node_modules/css-loader/dist/cjs.js!/home/runner/work/Weather-App/Weather-App/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!/home/runner/work/Weather-App/Weather-App/src/styles.css",
+          "identifier": "/home/kyle/web-projects/Weather-App/node_modules/mini-css-extract-plugin/dist/loader.js!/home/kyle/web-projects/Weather-App/node_modules/css-loader/dist/cjs.js!/home/kyle/web-projects/Weather-App/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!/home/kyle/web-projects/Weather-App/src/styles.css",
           "name": "./src/styles.css",
           "id": null
         }
@@ -662,10 +688,10 @@
       "assets": [],
       "reasons": [
         {
-          "moduleIdentifier": "/home/runner/work/Weather-App/Weather-App/node_modules/mini-css-extract-plugin/dist/loader.js!/home/runner/work/Weather-App/Weather-App/node_modules/css-loader/dist/cjs.js!/home/runner/work/Weather-App/Weather-App/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!/home/runner/work/Weather-App/Weather-App/src/styles.css",
+          "moduleIdentifier": "/home/kyle/web-projects/Weather-App/node_modules/mini-css-extract-plugin/dist/loader.js!/home/kyle/web-projects/Weather-App/node_modules/css-loader/dist/cjs.js!/home/kyle/web-projects/Weather-App/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!/home/kyle/web-projects/Weather-App/src/styles.css",
           "module": "./src/styles.css",
           "moduleName": "./src/styles.css",
-          "resolvedModuleIdentifier": "/home/runner/work/Weather-App/Weather-App/node_modules/mini-css-extract-plugin/dist/loader.js!/home/runner/work/Weather-App/Weather-App/node_modules/css-loader/dist/cjs.js!/home/runner/work/Weather-App/Weather-App/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!/home/runner/work/Weather-App/Weather-App/src/styles.css",
+          "resolvedModuleIdentifier": "/home/kyle/web-projects/Weather-App/node_modules/mini-css-extract-plugin/dist/loader.js!/home/kyle/web-projects/Weather-App/node_modules/css-loader/dist/cjs.js!/home/kyle/web-projects/Weather-App/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!/home/kyle/web-projects/Weather-App/src/styles.css",
           "resolvedModule": "./src/styles.css",
           "type": "unknown",
           "active": true,
@@ -675,10 +701,10 @@
           "resolvedModuleId": null
         },
         {
-          "moduleIdentifier": "/home/runner/work/Weather-App/Weather-App/src/index.js|2ea193999e57a6161bec030a1c1bc28a",
+          "moduleIdentifier": "/home/kyle/web-projects/Weather-App/src/index.js|2ea193999e57a6161bec030a1c1bc28a",
           "module": "./src/index.js + 1 modules",
           "moduleName": "./src/index.js + 1 modules",
-          "resolvedModuleIdentifier": "/home/runner/work/Weather-App/Weather-App/node_modules/mini-css-extract-plugin/dist/loader.js!/home/runner/work/Weather-App/Weather-App/node_modules/css-loader/dist/cjs.js!/home/runner/work/Weather-App/Weather-App/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!/home/runner/work/Weather-App/Weather-App/src/styles.css",
+          "resolvedModuleIdentifier": "/home/kyle/web-projects/Weather-App/node_modules/mini-css-extract-plugin/dist/loader.js!/home/kyle/web-projects/Weather-App/node_modules/css-loader/dist/cjs.js!/home/kyle/web-projects/Weather-App/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!/home/kyle/web-projects/Weather-App/src/styles.css",
           "resolvedModule": "./src/styles.css",
           "type": "unknown",
           "active": true,
@@ -704,16 +730,16 @@
       ],
       "assets": [
         {
-          "name": "main.88ab6a325e9982548b03.css",
-          "size": 1539
+          "name": "main.5377cec7c4a24c46fdc7.css",
+          "size": 1511
         },
         {
-          "name": "main.280b02841f22e20e9ccf.js",
-          "size": 49
+          "name": "main.ac9fe01bcfbb0a320d55.js",
+          "size": 819
         }
       ],
       "filteredAssets": 0,
-      "assetsSize": 1588,
+      "assetsSize": 2330,
       "auxiliaryAssets": [],
       "filteredAuxiliaryAssets": 0,
       "auxiliaryAssetsSize": 0,
@@ -730,16 +756,16 @@
       ],
       "assets": [
         {
-          "name": "main.88ab6a325e9982548b03.css",
-          "size": 1539
+          "name": "main.5377cec7c4a24c46fdc7.css",
+          "size": 1511
         },
         {
-          "name": "main.280b02841f22e20e9ccf.js",
-          "size": 49
+          "name": "main.ac9fe01bcfbb0a320d55.js",
+          "size": 819
         }
       ],
       "filteredAssets": 0,
-      "assetsSize": 1588,
+      "assetsSize": 2330,
       "auxiliaryAssets": [],
       "filteredAuxiliaryAssets": 0,
       "auxiliaryAssetsSize": 0,
@@ -755,12 +781,12 @@
   "children": [
     {
       "name": "HtmlWebpackCompiler",
-      "hash": "310848a5ba36ed3d5683",
+      "hash": "64c1702a11dd9838e121",
       "version": "5.18.0",
-      "time": 90,
-      "builtAt": 1611803089475,
+      "time": 239,
+      "builtAt": 1611818045153,
       "publicPath": "",
-      "outputPath": "/home/runner/work/Weather-App/Weather-App/dist",
+      "outputPath": "/home/kyle/web-projects/Weather-App/dist",
       "assetsByChunkName": {},
       "assets": [],
       "chunks": [
@@ -769,9 +795,9 @@
           "initial": true,
           "entry": true,
           "recorded": false,
-          "size": 968,
+          "size": 1197,
           "sizes": {
-            "javascript": 941,
+            "javascript": 1170,
             "runtime": 27
           },
           "names": [
@@ -783,7 +809,7 @@
           ],
           "files": [],
           "auxiliaryFiles": [],
-          "hash": "369c297957021c0d884a",
+          "hash": "dda9d11e71ccbfe37aac",
           "childrenByOrder": {},
           "id": 563,
           "siblings": [],
@@ -794,16 +820,16 @@
               "type": "module",
               "moduleType": "javascript/auto",
               "layer": null,
-              "size": 887,
+              "size": 1116,
               "sizes": {
-                "javascript": 887
+                "javascript": 1116
               },
               "built": true,
               "codeGenerated": true,
               "cached": false,
-              "identifier": "/home/runner/work/Weather-App/Weather-App/node_modules/html-webpack-plugin/lib/loader.js!/home/runner/work/Weather-App/Weather-App/src/index.html",
+              "identifier": "/home/kyle/web-projects/Weather-App/node_modules/html-webpack-plugin/lib/loader.js!/home/kyle/web-projects/Weather-App/src/index.html",
               "name": "./node_modules/html-webpack-plugin/lib/loader.js!./src/index.html",
-              "nameForCondition": "/home/runner/work/Weather-App/Weather-App/src/index.html",
+              "nameForCondition": "/home/kyle/web-projects/Weather-App/src/index.html",
               "index": 1,
               "preOrderIndex": 1,
               "index2": 1,
@@ -826,16 +852,16 @@
               "assets": [],
               "reasons": [
                 {
-                  "moduleIdentifier": "/home/runner/work/Weather-App/Weather-App/node_modules/html-webpack-plugin/lib/loader.js!/home/runner/work/Weather-App/Weather-App/src/index.html",
+                  "moduleIdentifier": "/home/kyle/web-projects/Weather-App/node_modules/html-webpack-plugin/lib/loader.js!/home/kyle/web-projects/Weather-App/src/index.html",
                   "module": "./node_modules/html-webpack-plugin/lib/loader.js!./src/index.html",
                   "moduleName": "./node_modules/html-webpack-plugin/lib/loader.js!./src/index.html",
-                  "resolvedModuleIdentifier": "/home/runner/work/Weather-App/Weather-App/node_modules/html-webpack-plugin/lib/loader.js!/home/runner/work/Weather-App/Weather-App/src/index.html",
+                  "resolvedModuleIdentifier": "/home/kyle/web-projects/Weather-App/node_modules/html-webpack-plugin/lib/loader.js!/home/kyle/web-projects/Weather-App/src/index.html",
                   "resolvedModule": "./node_modules/html-webpack-plugin/lib/loader.js!./src/index.html",
                   "type": "cjs self exports reference",
                   "active": true,
                   "explanation": "",
                   "userRequest": null,
-                  "loc": "1:107-121",
+                  "loc": "1:101-115",
                   "moduleId": 411,
                   "resolvedModuleId": 411
                 },
@@ -848,7 +874,7 @@
                   "type": "entry",
                   "active": true,
                   "explanation": "",
-                  "userRequest": "/home/runner/work/Weather-App/Weather-App/node_modules/html-webpack-plugin/lib/loader.js!/home/runner/work/Weather-App/Weather-App/src/index.html",
+                  "userRequest": "/home/kyle/web-projects/Weather-App/node_modules/html-webpack-plugin/lib/loader.js!/home/kyle/web-projects/Weather-App/src/index.html",
                   "loc": "HtmlWebpackPlugin_0-0",
                   "moduleId": null,
                   "resolvedModuleId": null
@@ -870,8 +896,8 @@
               "usedExports": null,
               "providedExports": null,
               "optimizationBailout": [
-                "CommonJS bailout: module.exports is used directly at 1:107-121",
-                "Statement (VariableDeclaration) with side effects in source code at 1:0-107",
+                "CommonJS bailout: module.exports is used directly at 1:101-115",
+                "Statement (VariableDeclaration) with side effects in source code at 1:0-101",
                 "ModuleConcatenation bailout: Module is not an ECMAScript module"
               ],
               "depth": 0
@@ -975,7 +1001,7 @@
               "moduleIdentifier": "",
               "moduleName": "",
               "loc": "HtmlWebpackPlugin_0-0",
-              "request": "/home/runner/work/Weather-App/Weather-App/node_modules/html-webpack-plugin/lib/loader.js!/home/runner/work/Weather-App/Weather-App/src/index.html"
+              "request": "/home/kyle/web-projects/Weather-App/node_modules/html-webpack-plugin/lib/loader.js!/home/kyle/web-projects/Weather-App/src/index.html"
             },
             {
               "module": "",
@@ -1048,16 +1074,16 @@
           "type": "module",
           "moduleType": "javascript/auto",
           "layer": null,
-          "size": 887,
+          "size": 1116,
           "sizes": {
-            "javascript": 887
+            "javascript": 1116
           },
           "built": true,
           "codeGenerated": true,
           "cached": false,
-          "identifier": "/home/runner/work/Weather-App/Weather-App/node_modules/html-webpack-plugin/lib/loader.js!/home/runner/work/Weather-App/Weather-App/src/index.html",
+          "identifier": "/home/kyle/web-projects/Weather-App/node_modules/html-webpack-plugin/lib/loader.js!/home/kyle/web-projects/Weather-App/src/index.html",
           "name": "./node_modules/html-webpack-plugin/lib/loader.js!./src/index.html",
-          "nameForCondition": "/home/runner/work/Weather-App/Weather-App/src/index.html",
+          "nameForCondition": "/home/kyle/web-projects/Weather-App/src/index.html",
           "index": 1,
           "preOrderIndex": 1,
           "index2": 1,
@@ -1079,16 +1105,16 @@
           "assets": [],
           "reasons": [
             {
-              "moduleIdentifier": "/home/runner/work/Weather-App/Weather-App/node_modules/html-webpack-plugin/lib/loader.js!/home/runner/work/Weather-App/Weather-App/src/index.html",
+              "moduleIdentifier": "/home/kyle/web-projects/Weather-App/node_modules/html-webpack-plugin/lib/loader.js!/home/kyle/web-projects/Weather-App/src/index.html",
               "module": "./node_modules/html-webpack-plugin/lib/loader.js!./src/index.html",
               "moduleName": "./node_modules/html-webpack-plugin/lib/loader.js!./src/index.html",
-              "resolvedModuleIdentifier": "/home/runner/work/Weather-App/Weather-App/node_modules/html-webpack-plugin/lib/loader.js!/home/runner/work/Weather-App/Weather-App/src/index.html",
+              "resolvedModuleIdentifier": "/home/kyle/web-projects/Weather-App/node_modules/html-webpack-plugin/lib/loader.js!/home/kyle/web-projects/Weather-App/src/index.html",
               "resolvedModule": "./node_modules/html-webpack-plugin/lib/loader.js!./src/index.html",
               "type": "cjs self exports reference",
               "active": true,
               "explanation": "",
               "userRequest": null,
-              "loc": "1:107-121",
+              "loc": "1:101-115",
               "moduleId": 411,
               "resolvedModuleId": 411
             },
@@ -1101,7 +1127,7 @@
               "type": "entry",
               "active": true,
               "explanation": "",
-              "userRequest": "/home/runner/work/Weather-App/Weather-App/node_modules/html-webpack-plugin/lib/loader.js!/home/runner/work/Weather-App/Weather-App/src/index.html",
+              "userRequest": "/home/kyle/web-projects/Weather-App/node_modules/html-webpack-plugin/lib/loader.js!/home/kyle/web-projects/Weather-App/src/index.html",
               "loc": "HtmlWebpackPlugin_0-0",
               "moduleId": null,
               "resolvedModuleId": null
@@ -1123,8 +1149,8 @@
           "usedExports": null,
           "providedExports": null,
           "optimizationBailout": [
-            "CommonJS bailout: module.exports is used directly at 1:107-121",
-            "Statement (VariableDeclaration) with side effects in source code at 1:0-107",
+            "CommonJS bailout: module.exports is used directly at 1:101-115",
+            "Statement (VariableDeclaration) with side effects in source code at 1:0-101",
             "ModuleConcatenation bailout: Module is not an ECMAScript module"
           ],
           "depth": 0
@@ -1205,13 +1231,13 @@
       "children": []
     },
     {
-      "name": "mini-css-extract-plugin /home/runner/work/Weather-App/Weather-App/node_modules/css-loader/dist/cjs.js!/home/runner/work/Weather-App/Weather-App/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!/home/runner/work/Weather-App/Weather-App/src/styles.css",
-      "hash": "33e7d42ef51c132a48c4",
+      "name": "mini-css-extract-plugin /home/kyle/web-projects/Weather-App/node_modules/css-loader/dist/cjs.js!/home/kyle/web-projects/Weather-App/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!/home/kyle/web-projects/Weather-App/src/styles.css",
+      "hash": "88a5637e5428805973cb",
       "version": "5.18.0",
-      "time": 164,
-      "builtAt": 1611803089660,
+      "time": 329,
+      "builtAt": 1611818045517,
       "publicPath": "",
-      "outputPath": "/home/runner/work/Weather-App/Weather-App/dist",
+      "outputPath": "/home/kyle/web-projects/Weather-App/dist",
       "assetsByChunkName": {},
       "assets": [],
       "chunks": [
@@ -1220,9 +1246,9 @@
           "initial": true,
           "entry": true,
           "recorded": false,
-          "size": 5199,
+          "size": 5500,
           "sizes": {
-            "javascript": 4202,
+            "javascript": 4503,
             "runtime": 997
           },
           "names": [
@@ -1234,7 +1260,7 @@
           ],
           "files": [],
           "auxiliaryFiles": [],
-          "hash": "b1eb5cff1fc30df50278",
+          "hash": "23ee2047ec98273632f6",
           "childrenByOrder": {},
           "id": 323,
           "siblings": [],
@@ -1245,16 +1271,16 @@
               "type": "module",
               "moduleType": "javascript/auto",
               "layer": null,
-              "size": 2597,
+              "size": 2898,
               "sizes": {
-                "javascript": 2597
+                "javascript": 2898
               },
               "built": true,
               "codeGenerated": true,
               "cached": false,
-              "identifier": "/home/runner/work/Weather-App/Weather-App/node_modules/css-loader/dist/cjs.js!/home/runner/work/Weather-App/Weather-App/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!/home/runner/work/Weather-App/Weather-App/src/styles.css",
+              "identifier": "/home/kyle/web-projects/Weather-App/node_modules/css-loader/dist/cjs.js!/home/kyle/web-projects/Weather-App/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!/home/kyle/web-projects/Weather-App/src/styles.css",
               "name": "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./src/styles.css",
-              "nameForCondition": "/home/runner/work/Weather-App/Weather-App/src/styles.css",
+              "nameForCondition": "/home/kyle/web-projects/Weather-App/src/styles.css",
               "index": 0,
               "preOrderIndex": 0,
               "index2": 1,
@@ -1285,7 +1311,7 @@
                   "type": "entry",
                   "active": true,
                   "explanation": "",
-                  "userRequest": "!!/home/runner/work/Weather-App/Weather-App/node_modules/css-loader/dist/cjs.js!/home/runner/work/Weather-App/Weather-App/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!/home/runner/work/Weather-App/Weather-App/src/styles.css",
+                  "userRequest": "!!/home/kyle/web-projects/Weather-App/node_modules/css-loader/dist/cjs.js!/home/kyle/web-projects/Weather-App/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!/home/kyle/web-projects/Weather-App/src/styles.css",
                   "loc": "mini-css-extract-plugin",
                   "moduleId": null,
                   "resolvedModuleId": null
@@ -1325,9 +1351,9 @@
               "built": true,
               "codeGenerated": true,
               "cached": false,
-              "identifier": "/home/runner/work/Weather-App/Weather-App/node_modules/css-loader/dist/runtime/api.js",
+              "identifier": "/home/kyle/web-projects/Weather-App/node_modules/css-loader/dist/runtime/api.js",
               "name": "./node_modules/css-loader/dist/runtime/api.js",
-              "nameForCondition": "/home/runner/work/Weather-App/Weather-App/node_modules/css-loader/dist/runtime/api.js",
+              "nameForCondition": "/home/kyle/web-projects/Weather-App/node_modules/css-loader/dist/runtime/api.js",
               "index": 1,
               "preOrderIndex": 1,
               "index2": 0,
@@ -1336,11 +1362,11 @@
               "optional": false,
               "orphan": false,
               "dependent": true,
-              "issuer": "/home/runner/work/Weather-App/Weather-App/node_modules/css-loader/dist/cjs.js!/home/runner/work/Weather-App/Weather-App/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!/home/runner/work/Weather-App/Weather-App/src/styles.css",
+              "issuer": "/home/kyle/web-projects/Weather-App/node_modules/css-loader/dist/cjs.js!/home/kyle/web-projects/Weather-App/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!/home/kyle/web-projects/Weather-App/src/styles.css",
               "issuerName": "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./src/styles.css",
               "issuerPath": [
                 {
-                  "identifier": "/home/runner/work/Weather-App/Weather-App/node_modules/css-loader/dist/cjs.js!/home/runner/work/Weather-App/Weather-App/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!/home/runner/work/Weather-App/Weather-App/src/styles.css",
+                  "identifier": "/home/kyle/web-projects/Weather-App/node_modules/css-loader/dist/cjs.js!/home/kyle/web-projects/Weather-App/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!/home/kyle/web-projects/Weather-App/src/styles.css",
                   "name": "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./src/styles.css",
                   "id": 415
                 }
@@ -1356,10 +1382,10 @@
               "assets": [],
               "reasons": [
                 {
-                  "moduleIdentifier": "/home/runner/work/Weather-App/Weather-App/node_modules/css-loader/dist/cjs.js!/home/runner/work/Weather-App/Weather-App/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!/home/runner/work/Weather-App/Weather-App/src/styles.css",
+                  "moduleIdentifier": "/home/kyle/web-projects/Weather-App/node_modules/css-loader/dist/cjs.js!/home/kyle/web-projects/Weather-App/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!/home/kyle/web-projects/Weather-App/src/styles.css",
                   "module": "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./src/styles.css",
                   "moduleName": "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./src/styles.css",
-                  "resolvedModuleIdentifier": "/home/runner/work/Weather-App/Weather-App/node_modules/css-loader/dist/cjs.js!/home/runner/work/Weather-App/Weather-App/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!/home/runner/work/Weather-App/Weather-App/src/styles.css",
+                  "resolvedModuleIdentifier": "/home/kyle/web-projects/Weather-App/node_modules/css-loader/dist/cjs.js!/home/kyle/web-projects/Weather-App/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!/home/kyle/web-projects/Weather-App/src/styles.css",
                   "resolvedModule": "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./src/styles.css",
                   "type": "harmony side effect evaluation",
                   "active": true,
@@ -1370,10 +1396,10 @@
                   "resolvedModuleId": 415
                 },
                 {
-                  "moduleIdentifier": "/home/runner/work/Weather-App/Weather-App/node_modules/css-loader/dist/cjs.js!/home/runner/work/Weather-App/Weather-App/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!/home/runner/work/Weather-App/Weather-App/src/styles.css",
+                  "moduleIdentifier": "/home/kyle/web-projects/Weather-App/node_modules/css-loader/dist/cjs.js!/home/kyle/web-projects/Weather-App/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!/home/kyle/web-projects/Weather-App/src/styles.css",
                   "module": "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./src/styles.css",
                   "moduleName": "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./src/styles.css",
-                  "resolvedModuleIdentifier": "/home/runner/work/Weather-App/Weather-App/node_modules/css-loader/dist/cjs.js!/home/runner/work/Weather-App/Weather-App/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!/home/runner/work/Weather-App/Weather-App/src/styles.css",
+                  "resolvedModuleIdentifier": "/home/kyle/web-projects/Weather-App/node_modules/css-loader/dist/cjs.js!/home/kyle/web-projects/Weather-App/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!/home/kyle/web-projects/Weather-App/src/styles.css",
                   "resolvedModule": "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./src/styles.css",
                   "type": "harmony import specifier",
                   "active": true,
@@ -1384,10 +1410,10 @@
                   "resolvedModuleId": 415
                 },
                 {
-                  "moduleIdentifier": "/home/runner/work/Weather-App/Weather-App/node_modules/css-loader/dist/runtime/api.js",
+                  "moduleIdentifier": "/home/kyle/web-projects/Weather-App/node_modules/css-loader/dist/runtime/api.js",
                   "module": "./node_modules/css-loader/dist/runtime/api.js",
                   "moduleName": "./node_modules/css-loader/dist/runtime/api.js",
-                  "resolvedModuleIdentifier": "/home/runner/work/Weather-App/Weather-App/node_modules/css-loader/dist/runtime/api.js",
+                  "resolvedModuleIdentifier": "/home/kyle/web-projects/Weather-App/node_modules/css-loader/dist/runtime/api.js",
                   "resolvedModule": "./node_modules/css-loader/dist/runtime/api.js",
                   "type": "cjs self exports reference",
                   "active": true,
@@ -1554,7 +1580,7 @@
               "moduleIdentifier": "",
               "moduleName": "",
               "loc": "mini-css-extract-plugin",
-              "request": "!!/home/runner/work/Weather-App/Weather-App/node_modules/css-loader/dist/cjs.js!/home/runner/work/Weather-App/Weather-App/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!/home/runner/work/Weather-App/Weather-App/src/styles.css"
+              "request": "!!/home/kyle/web-projects/Weather-App/node_modules/css-loader/dist/cjs.js!/home/kyle/web-projects/Weather-App/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!/home/kyle/web-projects/Weather-App/src/styles.css"
             }
           ]
         }
@@ -1564,16 +1590,16 @@
           "type": "module",
           "moduleType": "javascript/auto",
           "layer": null,
-          "size": 2597,
+          "size": 2898,
           "sizes": {
-            "javascript": 2597
+            "javascript": 2898
           },
           "built": true,
           "codeGenerated": true,
           "cached": false,
-          "identifier": "/home/runner/work/Weather-App/Weather-App/node_modules/css-loader/dist/cjs.js!/home/runner/work/Weather-App/Weather-App/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!/home/runner/work/Weather-App/Weather-App/src/styles.css",
+          "identifier": "/home/kyle/web-projects/Weather-App/node_modules/css-loader/dist/cjs.js!/home/kyle/web-projects/Weather-App/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!/home/kyle/web-projects/Weather-App/src/styles.css",
           "name": "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./src/styles.css",
-          "nameForCondition": "/home/runner/work/Weather-App/Weather-App/src/styles.css",
+          "nameForCondition": "/home/kyle/web-projects/Weather-App/src/styles.css",
           "index": 0,
           "preOrderIndex": 0,
           "index2": 1,
@@ -1603,7 +1629,7 @@
               "type": "entry",
               "active": true,
               "explanation": "",
-              "userRequest": "!!/home/runner/work/Weather-App/Weather-App/node_modules/css-loader/dist/cjs.js!/home/runner/work/Weather-App/Weather-App/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!/home/runner/work/Weather-App/Weather-App/src/styles.css",
+              "userRequest": "!!/home/kyle/web-projects/Weather-App/node_modules/css-loader/dist/cjs.js!/home/kyle/web-projects/Weather-App/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!/home/kyle/web-projects/Weather-App/src/styles.css",
               "loc": "mini-css-extract-plugin",
               "moduleId": null,
               "resolvedModuleId": null
@@ -1643,9 +1669,9 @@
           "built": true,
           "codeGenerated": true,
           "cached": false,
-          "identifier": "/home/runner/work/Weather-App/Weather-App/node_modules/css-loader/dist/runtime/api.js",
+          "identifier": "/home/kyle/web-projects/Weather-App/node_modules/css-loader/dist/runtime/api.js",
           "name": "./node_modules/css-loader/dist/runtime/api.js",
-          "nameForCondition": "/home/runner/work/Weather-App/Weather-App/node_modules/css-loader/dist/runtime/api.js",
+          "nameForCondition": "/home/kyle/web-projects/Weather-App/node_modules/css-loader/dist/runtime/api.js",
           "index": 1,
           "preOrderIndex": 1,
           "index2": 0,
@@ -1653,11 +1679,11 @@
           "cacheable": true,
           "optional": false,
           "orphan": false,
-          "issuer": "/home/runner/work/Weather-App/Weather-App/node_modules/css-loader/dist/cjs.js!/home/runner/work/Weather-App/Weather-App/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!/home/runner/work/Weather-App/Weather-App/src/styles.css",
+          "issuer": "/home/kyle/web-projects/Weather-App/node_modules/css-loader/dist/cjs.js!/home/kyle/web-projects/Weather-App/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!/home/kyle/web-projects/Weather-App/src/styles.css",
           "issuerName": "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./src/styles.css",
           "issuerPath": [
             {
-              "identifier": "/home/runner/work/Weather-App/Weather-App/node_modules/css-loader/dist/cjs.js!/home/runner/work/Weather-App/Weather-App/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!/home/runner/work/Weather-App/Weather-App/src/styles.css",
+              "identifier": "/home/kyle/web-projects/Weather-App/node_modules/css-loader/dist/cjs.js!/home/kyle/web-projects/Weather-App/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!/home/kyle/web-projects/Weather-App/src/styles.css",
               "name": "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./src/styles.css",
               "id": 415
             }
@@ -1673,10 +1699,10 @@
           "assets": [],
           "reasons": [
             {
-              "moduleIdentifier": "/home/runner/work/Weather-App/Weather-App/node_modules/css-loader/dist/cjs.js!/home/runner/work/Weather-App/Weather-App/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!/home/runner/work/Weather-App/Weather-App/src/styles.css",
+              "moduleIdentifier": "/home/kyle/web-projects/Weather-App/node_modules/css-loader/dist/cjs.js!/home/kyle/web-projects/Weather-App/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!/home/kyle/web-projects/Weather-App/src/styles.css",
               "module": "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./src/styles.css",
               "moduleName": "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./src/styles.css",
-              "resolvedModuleIdentifier": "/home/runner/work/Weather-App/Weather-App/node_modules/css-loader/dist/cjs.js!/home/runner/work/Weather-App/Weather-App/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!/home/runner/work/Weather-App/Weather-App/src/styles.css",
+              "resolvedModuleIdentifier": "/home/kyle/web-projects/Weather-App/node_modules/css-loader/dist/cjs.js!/home/kyle/web-projects/Weather-App/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!/home/kyle/web-projects/Weather-App/src/styles.css",
               "resolvedModule": "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./src/styles.css",
               "type": "harmony side effect evaluation",
               "active": true,
@@ -1687,10 +1713,10 @@
               "resolvedModuleId": 415
             },
             {
-              "moduleIdentifier": "/home/runner/work/Weather-App/Weather-App/node_modules/css-loader/dist/cjs.js!/home/runner/work/Weather-App/Weather-App/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!/home/runner/work/Weather-App/Weather-App/src/styles.css",
+              "moduleIdentifier": "/home/kyle/web-projects/Weather-App/node_modules/css-loader/dist/cjs.js!/home/kyle/web-projects/Weather-App/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!/home/kyle/web-projects/Weather-App/src/styles.css",
               "module": "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./src/styles.css",
               "moduleName": "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./src/styles.css",
-              "resolvedModuleIdentifier": "/home/runner/work/Weather-App/Weather-App/node_modules/css-loader/dist/cjs.js!/home/runner/work/Weather-App/Weather-App/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!/home/runner/work/Weather-App/Weather-App/src/styles.css",
+              "resolvedModuleIdentifier": "/home/kyle/web-projects/Weather-App/node_modules/css-loader/dist/cjs.js!/home/kyle/web-projects/Weather-App/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!/home/kyle/web-projects/Weather-App/src/styles.css",
               "resolvedModule": "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./src/styles.css",
               "type": "harmony import specifier",
               "active": true,
@@ -1701,10 +1727,10 @@
               "resolvedModuleId": 415
             },
             {
-              "moduleIdentifier": "/home/runner/work/Weather-App/Weather-App/node_modules/css-loader/dist/runtime/api.js",
+              "moduleIdentifier": "/home/kyle/web-projects/Weather-App/node_modules/css-loader/dist/runtime/api.js",
               "module": "./node_modules/css-loader/dist/runtime/api.js",
               "moduleName": "./node_modules/css-loader/dist/runtime/api.js",
-              "resolvedModuleIdentifier": "/home/runner/work/Weather-App/Weather-App/node_modules/css-loader/dist/runtime/api.js",
+              "resolvedModuleIdentifier": "/home/kyle/web-projects/Weather-App/node_modules/css-loader/dist/runtime/api.js",
               "resolvedModule": "./node_modules/css-loader/dist/runtime/api.js",
               "type": "cjs self exports reference",
               "active": true,
