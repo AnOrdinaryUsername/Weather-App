@@ -149,7 +149,7 @@ table {
 }
 
 html {
-  background-color: black;
+  background-color: white;
   display: flex;
   font-size: 62.5%;
   min-height: 100%;
@@ -165,8 +165,4 @@ body {
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-.test {
-  background-color: aqua;
 }
