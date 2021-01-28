@@ -57,10 +57,12 @@ jobs:
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
+
       - name: Build site
         run: |
           npm install
           npm run build
+
       - name: Deploy 🥳🎉
         uses: JamesIves/github-pages-deploy-action@3.7.1
         with:
