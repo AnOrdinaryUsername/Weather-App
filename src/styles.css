@@ -149,7 +149,8 @@ table {
 }
 
 html {
-  background-color: white;
+  background-color: hsl(208, 19%, 17%);
+  color: hsl(0, 0%, 100%);
   display: flex;
   font-size: 62.5%;
   min-height: 100%;
@@ -165,4 +166,10 @@ body {
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+@media (max-width: 360px) {
+  main {
+    margin: 10%;
+  }
 }
