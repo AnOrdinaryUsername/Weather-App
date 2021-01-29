@@ -1,6 +1,6 @@
 import 'core-js/stable';
 import 'regenerator-runtime/runtime';
-import ErrorAlert from './components/ErrorAlert/ErrorAlert';
+import ErrorAlert from '../components/ErrorAlert/ErrorAlert';
 
 export default class WeatherData {
     constructor(location) {

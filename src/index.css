@@ -168,7 +168,28 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-@media (max-width: 360px) {
+button {
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2;
+}
+
+main {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
   main {
     margin: 10%;
   }

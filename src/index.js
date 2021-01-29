@@ -1,6 +1,6 @@
+import WeatherData from './apis/WeatherData';
 import ErrorAlert from './components/ErrorAlert/ErrorAlert';
-import './styles.css';
-import WeatherData from './WeatherData';
+import './index.css';
 
 const findCurrentLocationWeather = () => {
     const userLocationButton = document.querySelector('#geolocation');
@@ -18,11 +18,11 @@ const findCurrentLocationWeather = () => {
     };
 
     const handleLocationError = (browserHasGeolocation) => {
-        const errorMessage = browserHasGeolocation
+        const error = browserHasGeolocation
             ? 'The Geolocation service failed. Enable it by clicking the marker symbol in the address bar.'
             : 'Your browser does not support geolocation.';
 
-        ErrorAlert.message(errorMessage);
+        ErrorAlert.message(error);
         ErrorAlert.toggleView();
     };
 
