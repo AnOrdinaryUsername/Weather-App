@@ -1,5 +1,13 @@
 {
   "htmlWhitespaceSensitivity": "strict",
   "printWidth": 100,
-  "singleQuote": true
+  "singleQuote": true,
+  "overrides": [
+    {
+      "files": ["src/**/*.js"],
+      "options": {
+        "tabWidth": 4
+      }
+    }
+  ]
 }
