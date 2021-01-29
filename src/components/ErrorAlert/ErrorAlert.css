@@ -3,14 +3,22 @@
 }
 
 .alert {
-  margin-top: 3.2rem;
   max-width: 46rem;
+  position: absolute;
+  top: 70%;
   width: 100%;
 }
 
+@media (max-width: 456px) {
+  .alert {
+    margin-top: 3.2rem;
+    max-width: 32rem;
+  }
+}
+
 .alert--error {
-  background-color: #fee2e2;
-  border-bottom: 2px solid #ef4444;
+  background-color: hsl(0, 93%, 94%);
+  border-bottom: 2px solid hsl(0, 84%, 60%);
   color: hsl(210, 19%, 13%);
 }
 
@@ -22,17 +30,19 @@
 }
 
 .icon {
-  color: #7f1d1d;
   line-height: 1;
   min-height: 3.2rem;
   min-width: 3.2rem;
-  background-color: white;
-  border: 2px solid #f87171;
+  background-color: hsl(0, 100%, 98%);
   border-radius: 9999px;
   margin: 1.4rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  place-items: center;
+}
+
+.icon--error {
+  border: 2px solid hsl(0, 91%, 71%);
+  color: hsl(0, 63%, 31%);
 }
 
 .message {
@@ -48,7 +58,7 @@
 }
 
 .message__header--error {
-  color: #7f1d1d;
+  color: hsl(0, 63%, 31%);
 }
 
 .message__text {
