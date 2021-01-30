@@ -148,6 +148,14 @@ table {
   }
 }
 
+*:focus:not(:focus-visible) {
+  outline: none;
+}
+
+*:focus-visible {
+  outline: 2px auto red;
+}
+
 html {
   background-color: hsl(208, 19%, 17%);
   color: hsl(0, 0%, 100%);
@@ -168,8 +176,66 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-@media (max-width: 360px) {
+button {
+  border: none;
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2;
+}
+
+main {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
   main {
     margin: 10%;
+  }
+}
+
+#geolocation {
+  cursor: pointer;
+  background-color: hsl(234, 62%, 60%);
+  color: hsl(0, 0%, 100%);
+  padding: 1.2rem 2.4rem;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 1em;
+  letter-spacing: 0.2px;
+}
+
+.search-options {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.search-options span {
+  color: hsl(0, 0%, 100%);
+  font-size: 1.25em;
+  letter-spacing: 0.1rem;
+  margin: 0 2.2rem;
+}
+
+@media (max-width: 456px) {
+  .search-options {
+    align-items: center;
+    flex-flow: column-reverse nowrap;
+  }
+
+  .search-options span {
+    margin: 0.4rem 0;
   }
 }

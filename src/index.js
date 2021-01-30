@@ -1,6 +1,9 @@
-import ErrorAlert from './components/ErrorAlert/ErrorAlert';
-import './styles.css';
-import WeatherData from './WeatherData';
+import '@fortawesome/fontawesome-free/js/all';
+import WeatherData from './apis/WeatherData';
+import ErrorAlert from './components/ErrorAlert';
+import findSearchLocationWeather from './components/SearchBox';
+import './components/SearchBox/SearchBox.css';
+import './index.css';
 
 const findCurrentLocationWeather = () => {
     const userLocationButton = document.querySelector('#geolocation');
@@ -13,16 +16,16 @@ const findCurrentLocationWeather = () => {
             longitude: coords.longitude,
         };
 
-        const forecast = new WeatherData(userLocation);
-        forecast.showWeather();
+        const forecast = new WeatherData();
+        forecast.showWeather(userLocation);
     };
 
     const handleLocationError = (browserHasGeolocation) => {
-        const errorMessage = browserHasGeolocation
+        const error = browserHasGeolocation
             ? 'The Geolocation service failed. Enable it by clicking the marker symbol in the address bar.'
             : 'Your browser does not support geolocation.';
 
-        ErrorAlert.message(errorMessage);
+        ErrorAlert.message(error);
         ErrorAlert.toggleView();
     };
 
@@ -47,3 +50,4 @@ if (module.hot) {
 }
 
 findCurrentLocationWeather();
+findSearchLocationWeather();

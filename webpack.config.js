@@ -91,7 +91,9 @@ module.exports = (env) => {
       ],
     },
     plugins: [
-      new CleanWebpackPlugin(),
+      new CleanWebpackPlugin({
+        cleanOnceBeforeBuildPatterns: ['**/*', '!images/**'],
+      }),
       new webpack.ProvidePlugin({
         process: 'process/browser',
       }),
