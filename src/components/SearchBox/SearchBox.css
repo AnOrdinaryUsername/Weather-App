@@ -1,0 +1,49 @@
+input[type='search'] {
+  font-size: 1.25em;
+  padding: 1rem 2.2rem 1rem 2.2rem;
+  border: none;
+  border-radius: 0.8rem;
+  text-align: center;
+}
+
+input[type='search']:focus {
+  outline: none;
+}
+
+.search {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 0.8rem;
+  position: relative;
+}
+
+/* Hide label text for Assistive Technology.
+    More info here: 
+    https://www.a11ymatters.com/pattern/accessible-search/#include-a-meaningful-description-in-the-label
+*/
+.search__label {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+.search__button {
+  color: hsl(208, 19%, 17%);
+  position: absolute;
+  right: 25px;
+  z-index: 1;
+  top: 0;
+  left: 87%;
+  bottom: 0;
+  margin: auto;
+  width: 25px;
+  height: 25px;
+  background: inherit;
+}
+
+#search-city::-webkit-search-cancel-button {
+  display: none;
+}
