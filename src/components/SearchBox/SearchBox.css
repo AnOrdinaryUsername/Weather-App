@@ -4,6 +4,7 @@ input[type='search'] {
   border: none;
   border-radius: 0.8rem;
   text-align: center;
+  width: calc(100% - 2rem);
 }
 
 input[type='search']:focus {
@@ -31,17 +32,18 @@ input[type='search']:focus {
 }
 
 .search__button {
+  /* Button svg is now the same color as the background. */
   color: hsl(208, 19%, 17%);
   position: absolute;
   right: 25px;
   z-index: 1;
   top: 0;
-  left: 87%;
+  left: 88%;
   bottom: 0;
-  margin: auto;
-  width: 25px;
-  height: 25px;
-  background: inherit;
+  background-color: hsl(0, 0%, 94%);
+  border-top-right-radius: inherit;
+  border-bottom-right-radius: inherit;
+  width: 35px;
 }
 
 #search-city::-webkit-search-cancel-button {
