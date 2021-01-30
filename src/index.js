@@ -1,5 +1,8 @@
+import '@fortawesome/fontawesome-free/js/all';
 import WeatherData from './apis/WeatherData';
-import ErrorAlert from './components/ErrorAlert/ErrorAlert';
+import ErrorAlert from './components/ErrorAlert';
+import findSearchLocationWeather from './components/SearchBox';
+import './components/SearchBox/SearchBox.css';
 import './index.css';
 
 const findCurrentLocationWeather = () => {
@@ -13,8 +16,8 @@ const findCurrentLocationWeather = () => {
             longitude: coords.longitude,
         };
 
-        const forecast = new WeatherData(userLocation);
-        forecast.showWeather();
+        const forecast = new WeatherData();
+        forecast.showWeather(userLocation);
     };
 
     const handleLocationError = (browserHasGeolocation) => {
@@ -47,3 +50,4 @@ if (module.hot) {
 }
 
 findCurrentLocationWeather();
+findSearchLocationWeather();
