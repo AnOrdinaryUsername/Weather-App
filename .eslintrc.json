@@ -10,6 +10,7 @@
     "sourceType": "module"
   },
   "rules": {
-    "consistent-return": "off"
+    "consistent-return": "off",
+    "no-unused-vars": "warn"
   }
 }
