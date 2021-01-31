@@ -1,8 +1,13 @@
 import 'core-js/stable';
 import 'regenerator-runtime/runtime';
-import ErrorAlert from '../components/ErrorAlert/ErrorAlert';
+import ErrorAlert from '../components/ErrorAlert';
+import Weather from '../components/Weather';
 
 export default class WeatherData {
+    constructor() {
+        this.data = null;
+    }
+
     /*  Note: Never put API keys in a git repository. This is a free one for testing so it's
      *   okay in this case.
      */
@@ -47,6 +52,7 @@ export default class WeatherData {
             }
 
             data = await this.grabWeatherData(location);
+            this.data = data;
 
             if (data.cod !== 200) {
                 const { message } = data;
@@ -65,14 +71,26 @@ export default class WeatherData {
         }
 
         const forecast = {
+            image: {
+                name: data.weather[0].icon,
+                alt: data.weather[0].description,
+            },
             location: {
-                name: data.name,
+                city: data.name,
                 country: data.sys.country,
             },
-            temperature: data.main.temp,
-            cloudiness: data.weather[0].main,
+            phrase: {
+                temp: Math.round(data.main.temp),
+                desc: data.weather[0].description,
+            },
+            misc: {
+                feelsLike: data.main.feels_like,
+                humidity: data.main.humidity,
+                windSpeed: data.wind.speed,
+                cloudiness: data.clouds.all,
+            },
         };
 
-        document.querySelector('.result').textContent = forecast.location.name;
+        Weather.editDisplay(forecast);
     };
 }
