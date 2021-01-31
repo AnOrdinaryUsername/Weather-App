@@ -1,7 +1,7 @@
 import WeatherData from '../../apis/WeatherData';
 import './SearchBox.css';
 
-const findSearchLocationWeather = () => {
+const findSearchQueryWeather = () => {
     const searchBox = document.querySelector('#search-city');
     const searchBoxButton = document.querySelector('.search__button');
 
@@ -26,4 +26,4 @@ const findSearchLocationWeather = () => {
     });
 };
 
-export default findSearchLocationWeather;
+export default findSearchQueryWeather;

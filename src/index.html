@@ -16,8 +16,31 @@
     <meta name="theme-color" content="#ffffff" />
   </head>
   <body>
+    <header>
+      <h1>
+        Weather
+        <i class="fas fa-umbrella"></i>
+      </h1>
+      <button>
+        <i class="far fa-moon"></i>
+      </button>
+    </header>
     <main>
-      <p class="result"></p>
+      <section class="weather-container">
+        <div class="weather">
+          <img class="weather__image" src="" alt="" />
+          <div class="location">
+            <h2 class="weather__city">
+              <span class="weather__country"></span>
+            </h2>
+          </div>
+          <div class="description">
+            <span class="weather__temp">
+              <span class="weather__phrase"></span>
+            </span>
+          </div>
+        </div>
+      </section>
       <div class="search-options">
         <button id="geolocation">Local Weather</button>
         <span> or </span>

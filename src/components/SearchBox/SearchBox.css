@@ -4,6 +4,14 @@ input[type='search'] {
   border: none;
   border-radius: 0.8rem;
   text-align: center;
+  width: calc(100% - 2rem);
+}
+
+@media (prefers-color-scheme: light) {
+  input[type='search'] {
+    background-color: hsl(226, 12%, 26%);
+    color: hsl(0, 0%, 100%);
+  }
 }
 
 input[type='search']:focus {
@@ -31,17 +39,25 @@ input[type='search']:focus {
 }
 
 .search__button {
+  /* Button svg is now the same color as the background. */
   color: hsl(208, 19%, 17%);
   position: absolute;
   right: 25px;
   z-index: 1;
   top: 0;
-  left: 87%;
+  left: 88%;
   bottom: 0;
-  margin: auto;
-  width: 25px;
-  height: 25px;
-  background: inherit;
+  background-color: hsl(0, 0%, 94%);
+  border-top-right-radius: inherit;
+  border-bottom-right-radius: inherit;
+  width: 35px;
+}
+
+@media (prefers-color-scheme: light) {
+  .search__button {
+    background-color: hsl(229, 12%, 18%);
+    color: hsl(28, 50%, 78%);
+  }
 }
 
 #search-city::-webkit-search-cancel-button {
