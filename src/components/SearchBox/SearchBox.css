@@ -7,6 +7,13 @@ input[type='search'] {
   width: calc(100% - 2rem);
 }
 
+@media (prefers-color-scheme: light) {
+  input[type='search'] {
+    background-color: hsl(226, 12%, 26%);
+    color: hsl(0, 0%, 100%);
+  }
+}
+
 input[type='search']:focus {
   outline: none;
 }
@@ -44,6 +51,13 @@ input[type='search']:focus {
   border-top-right-radius: inherit;
   border-bottom-right-radius: inherit;
   width: 35px;
+}
+
+@media (prefers-color-scheme: light) {
+  .search__button {
+    background-color: hsl(229, 12%, 18%);
+    color: hsl(28, 50%, 78%);
+  }
 }
 
 #search-city::-webkit-search-cancel-button {
