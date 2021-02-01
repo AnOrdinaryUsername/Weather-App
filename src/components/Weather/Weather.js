@@ -8,12 +8,17 @@ const Weather = {
         weatherImage.src = `https://openweathermap.org/img/wn/${image.name}@4x.png`;
         weatherImage.alt = image.alt;
 
-        selectElement('.weather__city').firstChild.textContent = `${location.city}`;
-        selectElement('.weather__country').textContent = `, ${location.country}`;
+        selectElement('.weather__city').firstChild.textContent = location.city;
+        selectElement('.weather__country').textContent = location.country;
 
-        selectElement('.weather__temp').textContent = `${phrase.temp}°F `;
-        const properCase = phrase.desc[0].toUpperCase() + phrase.desc.slice(1);
-        selectElement('.weather__phrase').textContent = `/ ${properCase}`;
+        selectElement('.weather__temp').textContent = phrase.temp;
+        selectElement('.weather__phrase').textContent = phrase.desc;
+
+        const miscColumn = document.getElementsByClassName('row__col--2');
+        const miscData = Object.values(misc);
+        miscColumn.forEach((element, index) => {
+            element.textContent = miscData[index];
+        });
     },
 };
 
