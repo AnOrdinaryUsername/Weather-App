@@ -228,6 +228,7 @@ main {
 @media (max-width: 768px) {
   main {
     margin: 10%;
+    padding-top: 0;
   }
 }
 
@@ -235,6 +236,21 @@ main {
   ::placeholder {
     color: hsl(0, 0%, 72%);
   }
+}
+
+body::-webkit-scrollbar {
+  background-color: hsl(215, 14%, 34%);
+  width: 1.4rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 0.3rem;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: hsl(218, 11%, 65%);
+  border-radius: 0.5rem;
 }
 
 .search-options {

@@ -22,7 +22,7 @@
         <i class="fas fa-umbrella"></i>
       </h1>
       <button>
-        <i class="far fa-moon"></i>
+        <i class="fas fa-moon"></i>
       </button>
     </header>
     <main>
@@ -38,6 +38,32 @@
           <div class="description">
             <span class="weather__temp"></span>
             <span class="weather__phrase"></span>
+          </div>
+        </div>
+        <div class="weather-misc">
+          <div class="feels-like row">
+            <span class="row__col--1">Feels like</span>
+            <span class="row__col--2"></span>
+          </div>
+          <div class="humidity row">
+            <span class="row__col--1">Humidity</span>
+            <span class="row__col--2"></span>
+          </div>
+          <div class="cloudiness row">
+            <span class="row__col--1">Cloudiness</span>
+            <span class="row__col--2"></span>
+          </div>
+          <div class="wind-speed row">
+            <span class="row__col--1">Wind speed</span>
+            <span class="row__col--2"></span>
+          </div>
+          <div class="rain row">
+            <span class="row__col--1">Rain volume</span>
+            <span class="row__col--2"></span>
+          </div>
+          <div class="snow row">
+            <span class="row__col--1">Snow volume</span>
+            <span class="row__col--2"></span>
           </div>
         </div>
       </section>
@@ -63,7 +89,7 @@
           </div>
         </form>
       </div>
-      <div class="hidden alert alert--error">
+      <div class="hidden alert alert--error" aria-hidden="true">
         <div class="alert-container">
           <div class="icon icon--error">
             <i class="fas fa-times"></i>
