@@ -7,6 +7,12 @@ const ErrorAlert = {
         alertBox.classList.toggle('hidden');
 
         this.isPresent = !this.isPresent;
+
+        if (this.isPresent) {
+            alertBox.setAttribute('aria-hidden', false);
+        } else {
+            alertBox.setAttribute('aria-hidden', true);
+        }
     },
 
     message: (msg) => {
