@@ -1,18 +1,16 @@
 .hidden {
-  display: none;
+  visibility: hidden;
 }
 
 .alert {
   max-width: 46rem;
-  position: absolute;
-  top: 70%;
+  margin: 5rem 0;
   width: 100%;
 }
 
-@media (max-width: 456px) {
+@media (max-width: 768px) {
   .alert {
-    margin-top: 3.2rem;
-    max-width: 32rem;
+    margin-bottom: 0;
   }
 }
 
