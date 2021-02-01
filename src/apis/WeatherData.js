@@ -2,6 +2,7 @@ import 'core-js/stable';
 import 'regenerator-runtime/runtime';
 import ErrorAlert from '../components/ErrorAlert';
 import Weather from '../components/Weather';
+import { convertToProperCase } from '../utils/utility';
 
 export default class WeatherData {
     constructor() {
@@ -54,12 +55,11 @@ export default class WeatherData {
             data = await this.grabWeatherData(location);
             this.data = data;
 
+            // Throw an error if the server response is not 200 OK.
             if (data.cod !== 200) {
                 const { message } = data;
 
-                // OpenWeather messages are all lower case and have no period.
-                // Convert the first letter to uppercase and append a . at the end.
-                let errorMessage = message[0].toUpperCase() + message.slice(1);
+                let errorMessage = convertToProperCase(message);
                 errorMessage += '.';
 
                 throw new Error(errorMessage);
@@ -70,6 +70,48 @@ export default class WeatherData {
             return;
         }
 
+        const precipitation = {
+            type: null,
+            grabPrecipitationData: function grabPrecipitationData() {
+                // Em dash to represent no data for rain or snow.
+                switch (this.type) {
+                    case 'rain':
+                        return {
+                            rain: `${data.rain['1h']} mm`,
+                            snow: '—',
+                        };
+                    case 'snow':
+                        return {
+                            rain: '—',
+                            snow: `${data.snow['1h']} mm`,
+                        };
+                    case 'mixed':
+                        return {
+                            rain: `${data.rain['1h']} mm`,
+                            snow: `${data.snow['1h']} mm`,
+                        };
+                    default:
+                        return {
+                            rain: '—',
+                            snow: '—',
+                        };
+                }
+            },
+        };
+
+        const dataHasProperty = (prop) => ({}.propertyIsEnumerable.call(data, prop));
+
+        if (dataHasProperty('rain')) {
+            precipitation.type = 'rain';
+        } else if (dataHasProperty('snow')) {
+            precipitation.type = 'snow';
+        } else if (dataHasProperty('rain') && dataHasProperty('snow')) {
+            precipitation.type = 'mixed';
+        }
+
+        const desc = data.weather[0].description;
+        const properCase = convertToProperCase(desc);
+
         const forecast = {
             image: {
                 name: data.weather[0].icon,
@@ -77,17 +119,18 @@ export default class WeatherData {
             },
             location: {
                 city: data.name,
-                country: data.sys.country,
+                country: `, ${data.sys.country}`,
             },
             phrase: {
-                temp: Math.round(data.main.temp),
-                desc: data.weather[0].description,
+                temp: `${Math.round(data.main.temp)}°F`, // F / C
+                desc: ` / ${properCase}`,
             },
             misc: {
-                feelsLike: data.main.feels_like,
-                humidity: data.main.humidity,
-                windSpeed: data.wind.speed,
-                cloudiness: data.clouds.all,
+                feelsLike: `${Math.round(data.main.feels_like)}°F`, // F / C
+                humidity: `${data.main.humidity}%`, // %
+                cloudiness: `${data.clouds.all}%`, // %
+                windSpeed: `${Math.round(data.wind.speed)} mph`, // mph / kph
+                ...precipitation.grabPrecipitationData(), // mm / in
             },
         };
 
