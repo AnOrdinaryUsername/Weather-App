@@ -12,7 +12,7 @@ Look at weather data using the OpenWeatherMap API.
 
 <div align="center">
     <a href="https://anordinaryusername.github.io/Weather-App/">
-        <img alt="View the weather with this extraordinary website." src="https://i.imgur.com/s3oAOsw_d.webp?maxwidth=1520&fidelity=grand">
+        <img alt="View the weather with this extraordinary website." src="https://i.imgur.com/zuzPRoF_d.webp?maxwidth=1520&fidelity=grand">
     </a>
 </div>
 
