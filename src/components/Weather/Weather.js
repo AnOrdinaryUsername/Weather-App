@@ -8,6 +8,7 @@ const Weather = {
         weatherImage.src = `https://openweathermap.org/img/wn/${image.name}@4x.png`;
         weatherImage.alt = image.alt;
 
+        // h2 has a nested span in it so we're targeting the text node
         selectElement('.weather__city').firstChild.textContent = location.city;
         selectElement('.weather__country').textContent = location.country;
 
