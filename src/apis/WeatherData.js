@@ -2,7 +2,7 @@ import 'core-js/stable';
 import 'regenerator-runtime/runtime';
 import ErrorAlert from '../components/ErrorAlert';
 import Weather from '../components/Weather';
-import { convertToProperCase } from '../utils/utility';
+import { Conversion, convertToProperCase } from '../utils/utility';
 
 export default class WeatherData {
     constructor() {
@@ -21,7 +21,7 @@ export default class WeatherData {
             }
 
             if (typeof searchQuery === 'object') {
-                const { latitude, longitude } = { ...searchQuery };
+                const { latitude, longitude } = searchQuery;
                 weatherData = await fetch(
                     `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=${units}&appid=9d958a66e735735b56e66b55bba5ada5`,
                     { mode: 'cors' }
@@ -46,13 +46,32 @@ export default class WeatherData {
 
     showWeather = async (location) => {
         let data = null;
+        const measurement = document.querySelector('button.switch');
+        const inImperialMode = measurement.getAttribute('aria-checked') === 'true';
+
+        const measurementUnit = {
+            temp: null,
+            speed: null,
+            volume: null,
+        };
 
         try {
             if (ErrorAlert.isPresent) {
                 ErrorAlert.toggleView();
             }
 
-            data = await this.grabWeatherData(location);
+            if (inImperialMode) {
+                data = await this.grabWeatherData(location);
+                measurementUnit.temp = '°F';
+                measurementUnit.speed = 'mph';
+                measurementUnit.volume = 'in';
+            } else {
+                data = await this.grabWeatherData(location, 'metric');
+                measurementUnit.temp = '°C';
+                measurementUnit.speed = 'kph';
+                measurementUnit.volume = 'mm';
+            }
+
             this.data = data;
 
             // Throw an error if the server response is not 200 OK.
@@ -72,23 +91,47 @@ export default class WeatherData {
 
         const precipitation = {
             type: null,
-            grabPrecipitationData: function grabPrecipitationData() {
+            grabData: function grabData() {
+                let [rainVolume, snowVolume] = [null, null];
+                const { volume } = measurementUnit;
+
+                if (inImperialMode) {
+                    if (this.type === 'mixed') {
+                        rainVolume = Conversion.imperial.convertToInch(data.rain['1h']);
+                        snowVolume = Conversion.imperial.convertToInch(data.snow['1h']);
+                    } else if (this.type === 'rain') {
+                        rainVolume = Conversion.imperial.convertToInch(data.rain['1h']);
+                    } else if (this.type === 'snow') {
+                        snowVolume = Conversion.imperial.convertToInch(data.snow['1h']);
+                    }
+                } else {
+                    // eslint-disable-next-line no-lonely-if
+                    if (this.type === 'mixed') {
+                        rainVolume = `${data.rain['1h']}${volume}`;
+                        snowVolume = `${data.snow['1h']}${volume}`;
+                    } else if (this.type === 'rain') {
+                        rainVolume = `${data.rain['1h']}${volume}`;
+                    } else if (this.type === 'snow') {
+                        snowVolume = `${data.snow['1h']}${volume}`;
+                    }
+                }
+
                 // Em dash to represent no data for rain or snow.
                 switch (this.type) {
                     case 'rain':
                         return {
-                            rain: `${data.rain['1h']} mm`,
+                            rain: rainVolume,
                             snow: '—',
                         };
                     case 'snow':
                         return {
                             rain: '—',
-                            snow: `${data.snow['1h']} mm`,
+                            snow: snowVolume,
                         };
                     case 'mixed':
                         return {
-                            rain: `${data.rain['1h']} mm`,
-                            snow: `${data.snow['1h']} mm`,
+                            rain: rainVolume,
+                            snow: snowVolume,
                         };
                     default:
                         return {
@@ -101,16 +144,17 @@ export default class WeatherData {
 
         const dataHasProperty = (prop) => ({}.propertyIsEnumerable.call(data, prop));
 
-        if (dataHasProperty('rain')) {
+        if (dataHasProperty('rain') && dataHasProperty('snow')) {
+            precipitation.type = 'mixed';
+        } else if (dataHasProperty('rain')) {
             precipitation.type = 'rain';
         } else if (dataHasProperty('snow')) {
             precipitation.type = 'snow';
-        } else if (dataHasProperty('rain') && dataHasProperty('snow')) {
-            precipitation.type = 'mixed';
         }
 
         const desc = data.weather[0].description;
         const properCase = convertToProperCase(desc);
+        const { temp, speed } = measurementUnit;
 
         const forecast = {
             image: {
@@ -122,15 +166,15 @@ export default class WeatherData {
                 country: `, ${data.sys.country}`,
             },
             phrase: {
-                temp: `${Math.round(data.main.temp)}°F`, // F / C
+                temp: `${Math.round(data.main.temp)}${temp}`, // F / C
                 desc: ` / ${properCase}`,
             },
             misc: {
-                feelsLike: `${Math.round(data.main.feels_like)}°F`, // F / C
+                feelsLike: `${Math.round(data.main.feels_like)}${temp}`, // F / C
                 humidity: `${data.main.humidity}%`, // %
                 cloudiness: `${data.clouds.all}%`, // %
-                windSpeed: `${Math.round(data.wind.speed)} mph`, // mph / kph
-                ...precipitation.grabPrecipitationData(), // mm / in
+                windSpeed: `${Math.round(data.wind.speed)} ${speed}`, // mph / kph
+                ...precipitation.grabData(), // mm / in
             },
         };
 
