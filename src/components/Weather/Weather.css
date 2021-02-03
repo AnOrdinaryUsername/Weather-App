@@ -5,10 +5,10 @@
   min-width: 30rem;
   width: 100%;
   margin-bottom: 4.8rem;
-  background-color: hsl(229, 12%, 18%);
+  background-color: hsl(226, 12%, 31%);
   color: hsl(0, 0%, 100%);
   border-radius: 2.4rem;
-  border: 1.3rem solid hsl(226, 12%, 31%);
+  border: 1.4rem solid hsl(226, 12%, 31%);
 }
 
 @media (max-width: 768px) {
@@ -94,7 +94,7 @@
   flex-direction: column;
   font-size: 1.25em;
   font-weight: 300;
-  padding: 3.2rem;
+  padding: 3.2rem 3.2rem 2.2rem 3.2rem;
   width: 100%;
 }
 

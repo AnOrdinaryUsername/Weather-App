@@ -1,0 +1,58 @@
+.switch-container {
+  align-self: center;
+  border-radius: 0.5rem;
+  display: flex;
+  margin-top: 1.6rem;
+}
+
+.switch {
+  align-items: center;
+  background-color: hsl(210, 29%, 21%);
+  border-radius: inherit;
+  display: inline-flex;
+  font-size: 1.4rem;
+  height: 3.6rem;
+  letter-spacing: 0.4px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.switch span {
+  /* Make sure line-height matches height 
+     of button to center text in span */
+  line-height: 3.6rem;
+  min-width: 7.5rem;
+  padding: 0 1.2rem;
+  pointer-events: none;
+}
+
+/* Selected system of measurement */
+[role='switch'][aria-checked='false'] :first-child,
+[role='switch'][aria-checked='true'] :last-child {
+  background-color: hsl(203, 90%, 84%);
+  color: hsl(0, 0%, 7%);
+}
+
+@media (prefers-color-scheme: light) {
+  [role='switch'][aria-checked='false'] :first-child,
+  [role='switch'][aria-checked='true'] :last-child {
+    background-color: hsl(217, 61%, 70%);
+  }
+}
+
+/* Unselected system of measurement */
+[role='switch'][aria-checked='false'] :last-child,
+[role='switch'][aria-checked='true'] :first-child {
+  color: hsl(0, 0%, 93%);
+}
+
+.switch__left {
+  border-bottom-left-radius: inherit;
+  border-top-left-radius: inherit;
+}
+
+.switch__right {
+  border-bottom-right-radius: inherit;
+  border-top-right-radius: inherit;
+}

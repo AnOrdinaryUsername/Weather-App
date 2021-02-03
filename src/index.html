@@ -65,6 +65,16 @@
             <span class="row__col--1">Snow volume</span>
             <span class="row__col--2"></span>
           </div>
+          <div class="switch-container">
+            <label for="system" class="switch">
+              <span class="a11y-label">System of measurement</span>
+            </label>
+            <button role="switch" aria-checked="true" id="system" class="switch">
+                <span class="switch__left">Metric</span>
+                <span class="switch__right">Imperial</span>
+              </button>
+            </button>
+          </div>
         </div>
       </section>
       <div class="search-options">
@@ -73,7 +83,7 @@
         <form>
           <div class="search">
             <label for="search-city">
-              <span class="search__label">Search for a city's weather</span>
+              <span class="a11y-label">Search for a city's weather</span>
             </label>
             <input
               autocomplete="off"

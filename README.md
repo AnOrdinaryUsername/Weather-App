@@ -4,15 +4,17 @@ Look at weather data using the OpenWeatherMap API.
 
 ## Wireframe
 
-<p align="center">
-    <a href="https://anordinaryusername.github.io/Bits/">
+<div align="center">
         <img alt="Professionally made wireframe for site." src="https://i.imgur.com/6cF7FzA_d.webp?maxwidth=760&fidelity=grand">
-    </a>
-</p>
+</div>
 
 ## Final Design
 
-WIP
+<div align="center">
+    <a href="https://anordinaryusername.github.io/Weather-App/">
+        <img alt="View the weather with this extraordinary website." src="https://i.imgur.com/s3oAOsw_d.webp?maxwidth=1520&fidelity=grand">
+    </a>
+</div>
 
 ## Running it locally
 

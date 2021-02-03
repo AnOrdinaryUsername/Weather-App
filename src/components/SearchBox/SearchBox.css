@@ -10,7 +10,7 @@ input[type='search'] {
 @media (prefers-color-scheme: light) {
   input[type='search'] {
     background-color: hsl(226, 12%, 26%);
-    color: hsl(0, 0%, 100%);
+    color: hsl(0, 0%, 96%);
   }
 }
 
@@ -18,25 +18,36 @@ input[type='search']:focus {
   outline: none;
 }
 
+.search-options {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.search-options span {
+  color: hsl(0, 0%, 100%);
+  font-size: 1.25em;
+  letter-spacing: 0.1rem;
+  margin: 0 2.2rem;
+}
+
+@media (max-width: 456px) {
+  .search-options {
+    align-items: center;
+    flex-flow: column-reverse nowrap;
+  }
+
+  .search-options span {
+    margin: 0.4rem 0;
+  }
+}
+
 .search {
   background-color: hsl(0, 0%, 100%);
   border-radius: 0.8rem;
   min-width: 29.5rem;
   position: relative;
-}
-
-/* Hide label text for Assistive Technology.
-    More info here: 
-    https://www.a11ymatters.com/pattern/accessible-search/#include-a-meaningful-description-in-the-label
-*/
-.search__label {
-  position: absolute;
-  clip: rect(1px, 1px, 1px, 1px);
-  padding: 0;
-  border: 0;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
 }
 
 .search__button {
