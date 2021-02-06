@@ -21,19 +21,22 @@ const pageInit = () => {
     const detectColorTheme = () => {
         // Initial color theme.
         let theme = 'dark';
+        const root = document.documentElement;
         const storedTheme = localStorage.getItem('theme');
+        const mediaQuery = window.matchMedia('(prefers-color-scheme: light)');
 
         if (storedTheme) {
+            root.setAttribute('data-theme', 'dark');
             if (storedTheme === 'light') {
                 theme = 'light';
             }
-        } else if (window.matchMedia('(prefers-color-scheme: light)').matches) {
+        } else if (mediaQuery.matches) {
             theme = 'light';
         }
 
         if (theme === 'light') {
             changeToSunIcon();
-            document.documentElement.setAttribute('data-theme', 'light');
+            root.setAttribute('data-theme', 'light');
         }
     };
 
