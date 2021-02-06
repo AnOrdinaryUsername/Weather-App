@@ -191,7 +191,7 @@ table {
   --switch-selected-color: hsl(217, 61%, 70%);
 
   /* Weather.css */
-  --weather-bg-color: hsl(226, 12%, 31%);
+  --weather-bg-color: hsl(226, 12%, 26%);
   --weather-primary-color: hsl(28, 50%, 78%);
   --weather-secondary-color: hsl(0, 0%, 77%);
 
@@ -206,12 +206,6 @@ html {
   font-size: 62.5%;
   min-height: 100%;
   transition: color 300ms, background-color 300ms;
-}
-
-@media (prefers-color-scheme: light) {
-  html {
-    background-color: hsl(35, 50%, 78%);
-  }
 }
 
 body {
@@ -258,16 +252,6 @@ header button {
   background: inherit;
   color: inherit;
   font-size: inherit;
-}
-
-@media (prefers-color-scheme: light) {
-  header h1 {
-    color: hsl(0, 0%, 7%);
-  }
-
-  header button {
-    color: hsl(0, 0%, 7%);
-  }
 }
 
 main {
