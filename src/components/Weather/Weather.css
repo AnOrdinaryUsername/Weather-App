@@ -5,8 +5,8 @@
   min-width: 30rem;
   width: 100%;
   margin-bottom: 4.8rem;
-  background-color: hsl(226, 12%, 31%);
-  color: hsl(0, 0%, 100%);
+  background-color: var(--weather-bg-color);
+  color: var(--weather-primary-color);
   border-radius: 2.4rem;
   border: 1.4rem solid hsl(226, 12%, 31%);
 }
@@ -64,7 +64,7 @@
 
 .weather__country,
 .weather__phrase {
-  color: hsl(225, 9%, 67%);
+  color: var(--weather-secondary-color);
 }
 
 @media (prefers-color-scheme: light) {
@@ -113,11 +113,11 @@
 }
 
 .row__col--1 {
-  color: hsl(0, 0%, 100%);
+  color: var(--col-1-color);
 }
 
 .row__col--2 {
-  color: hsl(192, 56%, 64%);
+  color: var(--col-2-color);
 }
 
 @media (prefers-color-scheme: light) {

@@ -156,12 +156,56 @@ table {
   outline: 2px auto red;
 }
 
+/* Default is dark theme. */
+:root {
+  /* index.css */
+  --bg-color: hsl(232, 20%, 17%);
+  --font-color: hsl(0, 0%, 96%);
+  --scrollbar-bg-color: hsl(215, 14%, 34%);
+
+  /* Geolocation.css */
+  --geo-bg-color: hsl(234, 62%, 60%);
+
+  /* SystemButton.css */
+  --switch-selected-color: hsl(203, 90%, 84%);
+
+  /* Weather.css */
+  --weather-bg-color: hsl(226, 12%, 31%);
+  --weather-primary-color: hsl(0, 0%, 100%);
+  --weather-secondary-color: hsl(225, 9%, 67%);
+
+  --col-1-color: hsl(0, 0%, 100%);
+  --col-2-color: hsl(192, 56%, 64%);
+}
+
+[data-theme='light'] {
+  /* index.css */
+  --bg-color: hsl(35, 50%, 78%);
+  --font-color: hsl(0, 0%, 7%);
+  --scrollbar-bg-color: hsl(0, 0%, 72%);
+
+  /* Geolocation.css */
+  --geo-bg-color: hsl(238, 35%, 41%);
+
+  /* SystemButton.css */
+  --switch-selected-color: hsl(217, 61%, 70%);
+
+  /* Weather.css */
+  --weather-bg-color: hsl(226, 12%, 31%);
+  --weather-primary-color: hsl(28, 50%, 78%);
+  --weather-secondary-color: hsl(0, 0%, 77%);
+
+  --col-1-color: hsl(28, 50%, 78%);
+  --col-2-color: hsl(0, 0%, 96%);
+}
+
 html {
-  background-color: hsl(232, 20%, 17%);
-  color: hsl(0, 0%, 100%);
+  background-color: var(--bg-color);
+  color: var(--font-color);
   display: flex;
   font-size: 62.5%;
   min-height: 100%;
+  transition: color 300ms, background-color 300ms;
 }
 
 @media (prefers-color-scheme: light) {
@@ -212,8 +256,18 @@ header {
 header button {
   border: none;
   background: inherit;
-  color: white;
+  color: inherit;
   font-size: inherit;
+}
+
+@media (prefers-color-scheme: light) {
+  header h1 {
+    color: hsl(0, 0%, 7%);
+  }
+
+  header button {
+    color: hsl(0, 0%, 7%);
+  }
 }
 
 main {
@@ -232,14 +286,8 @@ main {
   }
 }
 
-@media (prefers-color-scheme: light) {
-  ::placeholder {
-    color: hsl(0, 0%, 72%);
-  }
-}
-
 body::-webkit-scrollbar {
-  background-color: hsl(215, 14%, 34%);
+  background-color: var(--scrollbar-bg-color);
   width: 1.4rem;
 }
 

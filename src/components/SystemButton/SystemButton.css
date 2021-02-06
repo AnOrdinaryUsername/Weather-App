@@ -30,7 +30,7 @@
 /* Selected system of measurement */
 [role='switch'][aria-checked='false'] :first-child,
 [role='switch'][aria-checked='true'] :last-child {
-  background-color: hsl(203, 90%, 84%);
+  background-color: var(--switch-selected-color);
   color: hsl(0, 0%, 7%);
 }
 

@@ -7,13 +7,6 @@ input[type='search'] {
   width: calc(100% - 2rem);
 }
 
-@media (prefers-color-scheme: light) {
-  input[type='search'] {
-    background-color: hsl(226, 12%, 26%);
-    color: hsl(0, 0%, 96%);
-  }
-}
-
 input[type='search']:focus {
   outline: none;
 }
@@ -26,10 +19,16 @@ input[type='search']:focus {
 }
 
 .search-options span {
-  color: hsl(0, 0%, 100%);
+  color: var(--font-color);
   font-size: 1.25em;
   letter-spacing: 0.1rem;
   margin: 0 2.2rem;
+}
+
+@media (prefers-color-scheme: light) {
+  .search-options span {
+    color: hsl(0, 0%, 7%);
+  }
 }
 
 @media (max-width: 456px) {
@@ -44,7 +43,7 @@ input[type='search']:focus {
 }
 
 .search {
-  background-color: hsl(0, 0%, 100%);
+  background-color: hsl(0, 0%, 96%);
   border-radius: 0.8rem;
   min-width: 29.5rem;
   position: relative;
@@ -65,13 +64,7 @@ input[type='search']:focus {
   width: 35px;
 }
 
-@media (prefers-color-scheme: light) {
-  .search__button {
-    background-color: hsl(229, 12%, 18%);
-    color: hsl(28, 50%, 78%);
-  }
-}
-
+/* Removes the 'X' button that remove all text in text box. */
 #search-city::-webkit-search-cancel-button {
   display: none;
 }
