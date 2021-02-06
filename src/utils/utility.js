@@ -2,15 +2,38 @@
 const convertToProperCase = (string) => string[0].toUpperCase() + string.slice(1);
 
 const Conversion = {
+    grabNumberOfUnits: (property, system, unit) => {
+        if (typeof property !== 'string') {
+            return;
+        }
+
+        let systemUnits = [];
+        switch (system) {
+            case 'imperial':
+                systemUnits = ['°F', ' in', ' mph'];
+                break;
+            case 'metric':
+                systemUnits = ['°C', ' mm', ' kph'];
+                break;
+            default:
+                throw new Error('Measurement system not found.');
+        }
+
+        const unitIndex = systemUnits.indexOf(unit);
+        const stop = property.indexOf(systemUnits[unitIndex]);
+
+        let amount = '';
+        for (let i = 0; i < stop; ++i) {
+            amount += property[i];
+        }
+
+        return amount;
+    },
+
     metric: {
         convertToCelsius: (Fahrenheit) => {
             if (typeof Fahrenheit === 'string') {
-                const stop = Fahrenheit.indexOf('°F');
-
-                let F = '';
-                for (let i = 0; i < stop; ++i) {
-                    F += Fahrenheit[i];
-                }
+                const F = Conversion.grabNumberOfUnits(Fahrenheit, 'imperial', '°F');
 
                 return `${Math.round(((Number(F) - 32) * (5 / 9)).toFixed(2))}°C`;
             }
@@ -20,12 +43,7 @@ const Conversion = {
 
         convertToKPH: (mile) => {
             if (typeof mile === 'string') {
-                const stop = mile.indexOf(' ');
-
-                let mi = '';
-                for (let i = 0; i < stop; ++i) {
-                    mi += mile[i];
-                }
+                const mi = Conversion.grabNumberOfUnits(mile, 'imperial', ' mph');
 
                 return `${Math.round((Number(mi) * 1.609).toFixed(2))} kph`;
             }
@@ -35,13 +53,8 @@ const Conversion = {
 
         convertToMillimeter: (inch) => {
             if (typeof inch === 'string') {
-                const stop = inch.indexOf(' ');
-
                 // in is a reserved keyword so no abbreviation.
-                let inches = '';
-                for (let i = 0; i < stop; ++i) {
-                    inches += inch[i];
-                }
+                const inches = Conversion.grabNumberOfUnits(inch, 'imperial', ' in');
 
                 return `${Number(inches * 25.4).toFixed(2)} mm`;
             }
@@ -71,48 +84,33 @@ const Conversion = {
         },
     },
     imperial: {
-        convertToFahrenheit: (C) => {
-            if (typeof C === 'string') {
-                const stop = C.indexOf('°C');
+        convertToFahrenheit: (Celsius) => {
+            if (typeof Celsius === 'string') {
+                const C = Conversion.grabNumberOfUnits(Celsius, 'metric', '°C');
 
-                let celsius = '';
-                for (let i = 0; i < stop; ++i) {
-                    celsius += C[i];
-                }
-
-                return `${Math.round((celsius * (9 / 5) + 32).toFixed(2))}°F`;
+                return `${Math.round((C * (9 / 5) + 32).toFixed(2))}°F`;
             }
-            return `${Math.round((C * (9 / 5) + 32).toFixed(2))}°F`;
+            return `${Math.round((Celsius * (9 / 5) + 32).toFixed(2))}°F`;
         },
 
-        convertToMPH: (km) => {
-            if (typeof km === 'string') {
-                const stop = km.indexOf(' ');
+        convertToMPH: (kilometer) => {
+            if (typeof kilometer === 'string') {
+                const km = Conversion.grabNumberOfUnits(kilometer, 'metric', ' kph');
 
-                let kilometer = '';
-                for (let i = 0; i < stop; ++i) {
-                    kilometer += km[i];
-                }
-
-                return `${Math.round((Number(kilometer) / 1.609).toFixed(2))} mph`;
+                return `${Math.round((Number(km) / 1.609).toFixed(2))} mph`;
             }
 
-            return `${Math.round((Number(km) / 1.609).toFixed(2))} mph`;
+            return `${Math.round((Number(kilometer) / 1.609).toFixed(2))} mph`;
         },
 
-        convertToInch: (mm) => {
-            if (typeof mm === 'string') {
-                const stop = mm.indexOf(' ');
+        convertToInch: (milimeter) => {
+            if (typeof milimeter === 'string') {
+                const mm = Conversion.grabNumberOfUnits(milimeter, 'metric', ' mm');
 
-                let millimeter = '';
-                for (let i = 0; i < stop; ++i) {
-                    millimeter += mm[i];
-                }
-
-                return `${Number(millimeter / 25.4).toFixed(2)} in`;
+                return `${Number(mm / 25.4).toFixed(2)} in`;
             }
 
-            return `${Number(mm / 25.4).toFixed(2)} in`;
+            return `${Number(milimeter / 25.4).toFixed(2)} in`;
         },
 
         updateWeatherDisplay: function updateWeatherDisplay() {
