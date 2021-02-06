@@ -30,10 +30,10 @@ Or https
 git clone https://github.com/your-username/Weather-App.git
 ```
 
-Change to the Bits directory
+Change to the Weather-App directory
 
 ```bash
-cd Bits
+cd Weather-App
 ```
 
 ### Using npm
