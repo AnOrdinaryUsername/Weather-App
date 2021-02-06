@@ -34,13 +34,6 @@
   color: hsl(0, 0%, 7%);
 }
 
-@media (prefers-color-scheme: light) {
-  [role='switch'][aria-checked='false'] :first-child,
-  [role='switch'][aria-checked='true'] :last-child {
-    background-color: hsl(217, 61%, 70%);
-  }
-}
-
 /* Unselected system of measurement */
 [role='switch'][aria-checked='false'] :last-child,
 [role='switch'][aria-checked='true'] :first-child {

@@ -25,12 +25,6 @@ input[type='search']:focus {
   margin: 0 2.2rem;
 }
 
-@media (prefers-color-scheme: light) {
-  .search-options span {
-    color: hsl(0, 0%, 7%);
-  }
-}
-
 @media (max-width: 456px) {
   .search-options {
     align-items: center;

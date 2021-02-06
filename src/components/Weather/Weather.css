@@ -18,13 +18,6 @@
   }
 }
 
-@media (prefers-color-scheme: light) {
-  .weather-container {
-    background-color: hsl(226, 12%, 26%);
-    color: hsl(28, 50%, 78%);
-  }
-}
-
 .weather {
   align-items: center;
   display: flex;
@@ -65,13 +58,6 @@
 .weather__country,
 .weather__phrase {
   color: var(--weather-secondary-color);
-}
-
-@media (prefers-color-scheme: light) {
-  .weather__country,
-  .weather__phrase {
-    color: hsl(0, 0%, 77%);
-  }
 }
 
 .description {
@@ -118,14 +104,4 @@
 
 .row__col--2 {
   color: var(--col-2-color);
-}
-
-@media (prefers-color-scheme: light) {
-  .row__col--1 {
-    color: hsl(28, 50%, 78%);
-  }
-
-  .row__col--2 {
-    color: hsl(0, 0%, 96%);
-  }
 }
