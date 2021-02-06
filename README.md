@@ -18,7 +18,7 @@ Look at weather data using the OpenWeatherMap API.
 
 ## Running it locally
 
-Clone the repo with ssh
+Fork the repo and clone it with ssh
 
 ```bash
 git clone git@github.com:your-username/Weather-App.git
