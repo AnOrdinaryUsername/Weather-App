@@ -1,7 +1,7 @@
 #geolocation {
   cursor: pointer;
-  background-color: hsl(234, 62%, 60%);
-  color: hsl(0, 0%, 100%);
+  background-color: var(--geo-bg-color);
+  color: hsl(0, 0%, 96%);
   padding: 1.2rem 2.4rem;
   border-radius: 0.8rem;
   font-weight: 700;
@@ -11,7 +11,6 @@
 
 @media (prefers-color-scheme: light) {
   #geolocation {
-    background-color: hsl(229, 12%, 18%);
-    color: hsl(28, 50%, 78%);
+    background-color: hsl(238, 35%, 41%);
   }
 }
