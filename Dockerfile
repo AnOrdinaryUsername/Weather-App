@@ -1,6 +1,6 @@
 FROM node:14-alpine
 
-# Create Bits directory
+# Create app directory
 WORKDIR /app
 
 # Install dependencies
