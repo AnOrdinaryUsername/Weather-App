@@ -21,19 +21,19 @@ Look at weather data using the OpenWeatherMap API.
 Fork the repo and clone it with ssh
 
 ```bash
-git clone git@github.com:your-username/Weather-App.git
+> git clone git@github.com:your-username/Weather-App.git
 ```
 
 Or https
 
 ```bash
-git clone https://github.com/your-username/Weather-App.git
+> git clone https://github.com/your-username/Weather-App.git
 ```
 
 Change to the Weather-App directory
 
 ```bash
-cd Weather-App
+> cd Weather-App
 ```
 
 ### Using npm
@@ -41,13 +41,13 @@ cd Weather-App
 In the repo folder run
 
 ```bash
-npm install
+> npm install
 ```
 
 Then start up the dev server. It should automatically open [http://localhost:8080](http://localhost:8080) in Google Chrome Incognito mode.
 
 ```bash
-npm start
+> npm start
 ```
 
 ### Using Docker
@@ -55,7 +55,7 @@ npm start
 In the repo folder run
 
 ```bash
-docker-compose up
+> docker-compose up
 ```
 
 And now go to [http://localhost:8080](http://localhost:8080)
@@ -65,13 +65,13 @@ And now go to [http://localhost:8080](http://localhost:8080)
 To stop dev server and remove the Docker container run
 
 ```bash
-docker-compose down
+> docker-compose down
 ```
 
 To temporarily stop the dev server and NOT remove the Docker container run
 
 ```bash
-docker-compose stop
+> docker-compose stop
 ```
 
 You can then bring the server back up with `docker-compose up`.
